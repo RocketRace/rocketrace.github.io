@@ -23,7 +23,9 @@ At this point, you're done! Just click the "Download" button to download your ca
 
 On your computer, visit [your Google Calendar page](https://calendar.google.com). In the bottom left corner, next to "Other Calendars", there's a plus button. Click it, and then select "Create New Calendar". Choose a name you like for your calendar (you can change this later). Make sure the time zone is set to GMT+9, or Japan Standard Time! Click the "Create Calendar" button to continue.
 
-You should now have a blank calendar. In order to add your lessons to it, go back to the Google Calendar main screen. Click the same plus button, and this time select "Import". When prompted, select the calendar file (it should be in your `Downloads`). In the drop-down menu, choose the blank calendar and click the "Import" button. Be prepared to wait for a few of minutes at this point. After a short while, your calendar events should be visible!
+You should now have a blank calendar. In order to add your lessons to it, go back to the Google Calendar main screen. Click the same plus button, and this time select "Import". When prompted, select the calendar file (it should be in your `Downloads`). In the drop-down menu, choose the blank calendar. *Make sure to select a blank calendar to import into!* If your calendar doesn't show up in the menu, refresh your page and try again.
+
+Once you're ready, click the "Import" button. Be prepared to wait for a few of minutes at this point. After a short while, your calendar events should be visible!
 
 ## How do I import a calendar file into Apple Calendar?
 
