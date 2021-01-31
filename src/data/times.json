@@ -56,14 +56,14 @@
         ],
         [
             {
-                "startHours": 9,
-                "startMinutes": 30,
+                "startHours": 8,
+                "startMinutes": 45,
                 "endHours": 10,
-                "endMinutes": 25
+                "endMinutes": 5
             },
             {
                 "startHours": 10,
-                "startMinutes": 35,
+                "startMinutes": 15,
                 "endHours": 11,
                 "endMinutes": 35
             },
@@ -188,16 +188,16 @@
         ],
         [
             {
-                "startHours": 9,
-                "startMinutes": 30,
+                "startHours": 8,
+                "startMinutes": 45,
                 "endHours": 10,
-                "endMinutes": 25
+                "endMinutes": 5
             },
             {
                 "startHours": 10,
-                "startMinutes": 35,
+                "startMinutes": 15,
                 "endHours": 11,
-                "endMinutes": 25
+                "endMinutes": 35
             },
             {
                 "startHours": 12,
@@ -320,16 +320,16 @@
         ],
         [
             {
-                "startHours": 9,
-                "startMinutes": 30,
+                "startHours": 8,
+                "startMinutes": 45,
                 "endHours": 10,
-                "endMinutes": 25
+                "endMinutes": 5
             },
             {
                 "startHours": 10,
-                "startMinutes": 35,
+                "startMinutes": 15,
                 "endHours": 11,
-                "endMinutes": 25
+                "endMinutes": 35
             },
             {
                 "startHours": 12,
