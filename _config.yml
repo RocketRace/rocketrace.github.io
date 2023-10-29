@@ -1,7 +1,8 @@
 # Site settings
 title: oliviasite
 github_username: RocketRace
-# give blogposts a sane url
+url: "https://rocketrace.github.io"
+
 collections:
   posts:
     output: true
