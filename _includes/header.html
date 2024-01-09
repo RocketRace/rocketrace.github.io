@@ -1,4 +1,22 @@
-<header>
-  <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-  header links
+<header class="site-header">
+  <a href="{{ "/" | relative_url }}"><h1 class="site-title">
+    {{ site.title | escape }}
+  </h1></a>
+  <ul class="header-links">
+    <li class="header-link-item">
+      <a href="{{ "/" | relative_url }}">
+        <h2 class="header-link">blog</h2>
+      </a>
+    </li>
+    <li class="header-link-item">
+      <a href="{{ "/about" | relative_url }}">
+        <h2 class="header-link">about</h2>
+      </a>
+    </li>
+    <li class="header-link-item">
+      <a href="{{ "/projects" | relative_url }}">
+        <h2 class="header-link">projects</h2>
+      </a>
+    </li>
+  </ul>
 </header>

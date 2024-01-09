@@ -1,5 +1,26 @@
 ---
 ---
+// site header
+.site-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.site-title {
+  color: magenta
+}
+.header-links {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+.header-link-item {
+  display: auto;
+}
+.header-link {
+  color: lightpink;
+}
+
 
 // https://github.com/daveyarwood/gruvbox-pygments/tree/master
 .highlight .hll {
