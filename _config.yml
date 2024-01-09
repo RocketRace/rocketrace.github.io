@@ -1,19 +1,21 @@
-# Site settings
+# site settings
 title: oliviasite
 github_username: RocketRace
 url: "https://rocketrace.github.io"
 
+# change blogpost url format
 collections:
   posts:
     output: true
     permalink: /blog/:title
 
-# Build settings
-theme: minima
+excerpt_separator: <!--more-->
+
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
-# Exclude from processing.
+# exclude from processing
 exclude:
   - .sass-cache/
   - .jekyll-cache/
