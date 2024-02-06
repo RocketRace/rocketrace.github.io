@@ -13,6 +13,9 @@
     {%- feed_meta -%}
   </head>
   <body>
+    <canvas id="canvas">
+      <!-- prerendered tiling image for nojs clients -->
+    </canvas>
     {%- include header.html -%}
     <main class="content">
       {{ content }}

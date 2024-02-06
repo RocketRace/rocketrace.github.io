@@ -1,0 +1,16 @@
+{
+  "name": "rocketrace.github.io",
+  "version": "1.0.0",
+  "description": "my site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "npx tsc --watch",
+    "dev": "bundle exec jekyll serve"
+  },
+  "author": "RocketRace",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

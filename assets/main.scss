@@ -1,17 +1,42 @@
 ---
 ---
+.placeholder {
+  display: none;
+}
+
+
+$bright: #EBEBE0;
+$light: #CED7C8;
+$grey: #9BA8A1;
+$dim: #6B766F;
+$dark: #313433;
+
+$vibrant-violet: #7B76B3;
+$vibrant-blue: #73BBBF;
+$coral-pop: #F47E4B;
+
+body {
+  background-color: $bright;
+}
+
 // site header
 .site-header {
+  margin: 1rem;
   display: flex;
   flex-direction: row;
   width: 100%;
+  max-height: 72px;
+  align-items: center;
+}
+.header-image {
+  max-height: 72px;
 }
 .site-title {
   color: magenta
 }
 .header-links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   list-style-type: none;
 }
 .header-link-item {
@@ -19,6 +44,22 @@
 }
 .header-link {
   color: lightpink;
+}
+
+// Background canvas sizing
+html, body {
+  width:  100%;
+  height: 100%;
+  margin: 0;
+}
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 

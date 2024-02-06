@@ -23,6 +23,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules/
+  - assets/scripts/*.ts
+  - package.json
+  - package-lock.json
+  - tsconfig.json
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/

@@ -1,7 +1,10 @@
 <header class="site-header">
-  <a href="{{ "/" | relative_url }}"><h1 class="site-title">
+  <a href="{{ "/" | relative_url }}">
+    <img class="header-image" src="{{"/assets/images/icon.png" | relative_url }}" />
+  </a>
+  <h1 class="site-title">
     {{ site.title | escape }}
-  </h1></a>
+  </h1>
   <ul class="header-links">
     <li class="header-link-item">
       <a href="{{ "/" | relative_url }}">
