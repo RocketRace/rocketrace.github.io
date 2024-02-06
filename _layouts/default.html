@@ -16,9 +16,11 @@
     <canvas id="canvas">
       <!-- prerendered tiling image for nojs clients -->
     </canvas>
-    {%- include header.html -%}
-    <main class="content">
-      {{ content }}
-    </main>
+    <div class="content-flex">
+      <main class="content">
+        {%- include header.html -%}
+        {{ content }}
+      </main>
+    </div>
   </body>
 </html>

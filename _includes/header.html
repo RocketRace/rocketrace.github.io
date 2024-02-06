@@ -1,24 +1,28 @@
 <header class="site-header">
-  <a href="{{ "/" | relative_url }}">
+  <a href="{{ "/" | relative_url }}" class="header-image-box">
     <img class="header-image" src="{{"/assets/images/icon.png" | relative_url }}" />
   </a>
-  <h1 class="site-title">
-    {{ site.title | escape }}
-  </h1>
   <ul class="header-links">
-    <li class="header-link-item">
-      <a href="{{ "/" | relative_url }}">
-        <h2 class="header-link">blog</h2>
+    <li class="main-header-link">
+      <a href="{{ "/" | relative_url }}" class="header-link">
+        <h1 class="site-title">
+          {{ site.title | escape }}
+        </h1>
       </a>
     </li>
-    <li class="header-link-item">
-      <a href="{{ "/about" | relative_url }}">
-        <h2 class="header-link">about</h2>
+    <li class="other-header-link">
+      <a href="{{ "/" | relative_url }}" class="header-link">
+        <h2 class="section-title">blog</h2>
       </a>
     </li>
-    <li class="header-link-item">
-      <a href="{{ "/projects" | relative_url }}">
-        <h2 class="header-link">projects</h2>
+    <li class="other-header-link">
+      <a href="{{ "/about" | relative_url }}" class="header-link">
+        <h2 class="section-title">about</h2>
+      </a>
+    </li>
+    <li class="other-header-link">
+      <a href="{{ "/projects" | relative_url }}" class="header-link">
+        <h2 class="section-title">projects</h2>
       </a>
     </li>
   </ul>

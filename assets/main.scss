@@ -1,9 +1,9 @@
 ---
 ---
-.placeholder {
+// for vscode not to freak out
+.unused {
   display: none;
 }
-
 
 $bright: #EBEBE0;
 $light: #CED7C8;
@@ -23,26 +23,38 @@ body {
 .site-header {
   display: flex;
   flex-direction: row;
-  width: 100%;
   max-height: 72px;
   align-items: center;
+  justify-content: center;
+}
+.header-image-box {
+  margin-right: 1rem;
 }
 .header-image {
   max-height: 72px;
-}
-.site-title {
-  color: magenta
+  height: 72px;
 }
 .header-links {
   display: flex;
+  padding-left: 0;
   flex-direction: row;
+  align-items: center;
   list-style-type: none;
 }
-.header-link-item {
-  display: auto;
+.main-header-link {
+  margin-right: 2rem;
+}
+.other-header-link {
+  margin: 0 0.5rem;
 }
 .header-link {
-  color: lightpink;
+  text-decoration: none;
+}
+.site-title {
+  color: $coral-pop;
+}
+.section-title {
+  color: $vibrant-violet;
 }
 
 // Background canvas sizing
@@ -61,6 +73,27 @@ html, body {
   z-index: -1;
 }
 
+// Center the main content
+.content-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  background-color: rgba($color: $light, $alpha: 0.9);
+  margin: 2rem;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 60rem) {
+  .content {
+    max-width: 60rem;
+  }
+}
+
+// Code blocks
 
 // https://github.com/daveyarwood/gruvbox-pygments/tree/master
 .highlight .hll {
