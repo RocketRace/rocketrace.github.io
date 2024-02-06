@@ -221,4 +221,4 @@ const main = () => {
   }
 }
 
-window.onload = main;
+addEventListener("load", _ => main());

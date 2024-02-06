@@ -159,4 +159,4 @@ const main = () => {
         drawRandomExpanse(occupied);
     }
 };
-window.onload = main;
+addEventListener("load", _ => main());
