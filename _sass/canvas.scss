@@ -1,0 +1,16 @@
+// Disable scrollbars and 
+// enable proper canvas sizing
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+#canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
