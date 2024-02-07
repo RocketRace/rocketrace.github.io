@@ -1,14 +1,10 @@
 <header class="site-header">
-  <a href="{{ "/" | relative_url }}" class="header-image-box">
-    <img class="header-image" src="{{"/assets/images/icon.png" | relative_url }}" />
-  </a>
-  <ul class="header-links">
+  <img class="header-image" src="{{"/assets/images/icon.png" | relative_url }}" />
+  <nav class="header-links">
     <li class="main-header-link">
-      <a href="{{ "/" | relative_url }}" class="header-link">
-        <h1 class="site-title">
-          {{ site.title | escape }}
-        </h1>
-      </a>
+      <h1 class="site-title">
+        {{ site.title | escape }}
+      </h1>
     </li>
     <li class="other-header-link">
       <a href="{{ "/" | relative_url }}" class="header-link">
@@ -25,5 +21,5 @@
         <h2 class="section-title">projects</h2>
       </a>
     </li>
-  </ul>
+  </nav>
 </header>
