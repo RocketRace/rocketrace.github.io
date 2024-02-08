@@ -16,12 +16,20 @@ $vibrant-blue: #73BBBF;
 $coral-pop: #F47E4B;
 
 // site header
+.nav-header {
+  display: flex;
+  flex-direction: column;
+}
 .nav {
   display: flex;
   flex-direction: row;
   height: 72px;
   align-items: center;
   justify-content: center;
+}
+.header-divider {
+  margin: 2rem 0;
+  border-style: dashed;
 }
 .nav-image {
   height: 72px;
@@ -66,26 +74,27 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   width: 100%;
+  height: 100%;
 }
 body {
   background-color: $bright;
 }
 .content {
   background-color: rgba($color: $light, $alpha: 0.9);
-  margin: 2rem;
   padding: 2rem;
-  border-radius: 0.5rem;
 }
-@media screen and (min-width: 60rem) {
+@media screen and (max-width: 849px) {
   .content {
-      max-width: 60rem;
+    width: fit-content;
   }
 }
-@media screen and (min-width: 30rem) and (max-width: 60rem) {
+@media screen and (min-width: 850px) {
   .content {
-      max-width: 30rem;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    width: 65%
   }
 }
 
