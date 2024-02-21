@@ -1,8 +1,9 @@
+let COLORS: {[s in string]: string};
 const main = () => {
   const CANVAS_ELEMENT_ID = "canvas";
 
-  const LINE_COLOR = "#999999";
-  const POINT_COLOR = "#999999";
+  const LINE_COLOR = COLORS.vibrantblue;
+  const POINT_COLOR = COLORS.vibrantblue;
 
   const KEY = [0, 12, 15, 20, 24, 30, 36, 40, 45, 48, 60] as const;
   const GRID_SCALE = 60;

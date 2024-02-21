@@ -1,0 +1,16 @@
+- name: bright
+  hex: "#EBEBE0"
+- name: light
+  hex: "#CED7C8"
+- name: grey
+  hex: "#9BA8A1"
+- name: dim
+  hex: "#6B766F"
+- name: dark
+  hex: "#313433"
+- name: vibrantviolet
+  hex: "#6F6E7D"
+- name: vibrantblue
+  hex: "#73BBBF"
+- name: coralpop
+  hex: "#F47E4B"

@@ -1,20 +1,12 @@
 ---
 ---
-// for vscode not to freak out about syntax
-.unused {
-  display: none;
-}
-// variables
-$bright: #EBEBE0;
-$light: #CED7C8;
-$grey: #9BA8A1;
-$dim: #6B766F;
-$dark: #313433;
-
-$vibrant-violet: #7B76B3;
-$vibrant-blue: #73BBBF;
-$coral-pop: #F47E4B;
-
+// vscode HATES liquid
+// this lets me use the color variables in css
+// as well as elsewhere in the page content,
+// e.g. in a <canvas>
+{% for color in site.data.colors %}
+${{ color.name }}: {{ color.hex }};
+{% endfor %}
 // site header
 .nav-header {
   display: flex;
@@ -36,20 +28,20 @@ $coral-pop: #F47E4B;
   margin-right: 1rem;
 }
 .nav-title {
-  color: $coral-pop;
+  color: $coralpop;
   margin-right: 2rem;
   font-size: 2rem;
 }
 .nav-link {
   margin: 0 0.5rem;
   font-size: 0.8rem;
-  color: $vibrant-violet;
-  text-decoration-color: $vibrant-blue;
+  color: $vibrantviolet;
+  text-decoration-color: $vibrantblue;
   text-decoration-thickness: 2px;
   font-size: 1.1rem;
 }
 .nav-link:hover {
-  color: $vibrant-blue
+  color: $vibrantblue
 }
 
 // Disable scrollbars and 

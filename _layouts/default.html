@@ -12,6 +12,13 @@
     {%- endif -%}
     {%- feed_meta -%}
     <script src="{{ "/assets/scripts/canvas.js" | relative_url }}"></script>
+    <script>
+      COLORS = {
+        {% for color in site.data.colors %}
+        "{{ color.name }}": "{{ color.hex }}",
+        {% endfor %}
+      }
+    </script>
   </head>
   <body>
     <canvas id="canvas">
