@@ -2,8 +2,21 @@
 let COLORS;
 const main = () => {
     const CANVAS_ELEMENT_ID = "canvas";
-    const LINE_COLOR = COLORS.vibrantblue;
-    const POINT_COLOR = COLORS.vibrantblue;
+    const USABLE_COLORS = [
+        COLORS.tomato, COLORS.jade, COLORS.purpur
+    ];
+    const strHash = (s) => {
+        let hash = 0;
+        for (let i = 0; i < s.length; i++) {
+            hash = Math.abs(s.charCodeAt(i) + (hash << 5) - hash);
+        }
+        return hash;
+    };
+    const getColor = (seed) => {
+        const key = strHash(seed.toString()) % USABLE_COLORS.length;
+        console.log(key);
+        return USABLE_COLORS[key];
+    };
     const KEY = [0, 12, 15, 20, 24, 30, 36, 40, 45, 48, 60];
     const GRID_SCALE = 60;
     const VISUAL_SCALE = 0.5;
@@ -53,17 +66,17 @@ const main = () => {
         (x - VISUAL_PADDING * GRID_SCALE) * VISUAL_SCALE,
         (y - VISUAL_PADDING * GRID_SCALE) * VISUAL_SCALE,
     ];
-    const drawDot = (point) => {
+    const drawDot = (point, color) => {
         CTX.beginPath();
-        CTX.fillStyle = POINT_COLOR;
+        CTX.fillStyle = color;
         CTX.arc(...canvasCoordinates(point), 4, 0, 2 * Math.PI);
         CTX.fill();
     };
-    const drawLine = (point, direction) => {
-        drawDot(point);
-        drawDot(getDelta(point, direction));
+    const drawLine = (point, direction, color) => {
+        drawDot(point, color);
+        drawDot(getDelta(point, direction), color);
         CTX.beginPath();
-        CTX.strokeStyle = LINE_COLOR;
+        CTX.strokeStyle = color;
         CTX.moveTo(...canvasCoordinates(point));
         CTX.lineTo(...canvasCoordinates(getDelta(point, direction)));
         CTX.closePath();
@@ -75,8 +88,9 @@ const main = () => {
         const queue = [];
         if (drawExpanseRecursive(seed, expanse, visitedLines, visitedPoints, queue, occupied)) {
             queue.forEach(([point, direction]) => {
-                drawn_lines.push([point, direction]);
-                drawLine(point, direction);
+                const color = getColor(seed);
+                drawn_lines.push([point, direction, color]);
+                drawLine(point, direction, color);
             });
             visitedPoints.forEach((point) => {
                 occupied.add(point.toString());
@@ -150,10 +164,10 @@ const main = () => {
     };
     let drawn_lines = [];
     const redraw = () => {
-        drawn_lines.forEach(([point, direction]) => {
-            drawDot(point);
-            drawDot(getDelta(point, direction));
-            drawLine(point, direction);
+        drawn_lines.forEach(([point, direction, color]) => {
+            drawDot(point, color);
+            drawDot(getDelta(point, direction), color);
+            drawLine(point, direction, color);
         });
     };
     for (let i = 0; i < 1000; i++) {

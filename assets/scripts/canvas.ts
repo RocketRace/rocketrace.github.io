@@ -2,8 +2,23 @@ let COLORS: {[s in string]: string};
 const main = () => {
   const CANVAS_ELEMENT_ID = "canvas";
 
-  const LINE_COLOR = COLORS.vibrantblue;
-  const POINT_COLOR = COLORS.vibrantblue;
+  const USABLE_COLORS = [
+    COLORS.tomato, COLORS.jade, COLORS.purpur
+  ]
+
+  const strHash = (s: string): number => {
+    let hash = 0;
+    for (let i = 0; i < s.length; i++) {
+        hash = Math.abs(s.charCodeAt(i) + (hash << 5) - hash);
+    }
+    return hash;
+}
+
+  const getColor = (seed: Point): string => {
+    const key = strHash(seed.toString()) % USABLE_COLORS.length;
+    console.log(key);
+    return USABLE_COLORS[key]
+  }
 
   const KEY = [0, 12, 15, 20, 24, 30, 36, 40, 45, 48, 60] as const;
   const GRID_SCALE = 60;
@@ -72,18 +87,18 @@ const main = () => {
     (y - VISUAL_PADDING * GRID_SCALE) * VISUAL_SCALE,
   ];
 
-  const drawDot = (point: Point) => {
+  const drawDot = (point: Point, color: string) => {
     CTX.beginPath();
-    CTX.fillStyle = POINT_COLOR;
+    CTX.fillStyle = color;
     CTX.arc(...canvasCoordinates(point), 4, 0, 2 * Math.PI);
     CTX.fill();
   };
 
-  const drawLine = (point: Point, direction: Direction) => {
-    drawDot(point);
-    drawDot(getDelta(point, direction));
+  const drawLine = (point: Point, direction: Direction, color: string) => {
+    drawDot(point, color);
+    drawDot(getDelta(point, direction), color);
     CTX.beginPath();
-    CTX.strokeStyle = LINE_COLOR;
+    CTX.strokeStyle = color;
     CTX.moveTo(...canvasCoordinates(point));
     CTX.lineTo(...canvasCoordinates(getDelta(point, direction)));
     CTX.closePath();
@@ -105,8 +120,9 @@ const main = () => {
       )
     ) {
       queue.forEach(([point, direction]) => {
-        drawn_lines.push([point, direction]);
-        drawLine(point, direction);
+        const color = getColor(seed);
+        drawn_lines.push([point, direction, color]);
+        drawLine(point, direction, color);
       });
       visitedPoints.forEach((point) => {
         occupied.add(point.toString());
@@ -207,13 +223,13 @@ const main = () => {
     drawExpanse([x, y], expanse, occupied);
   };
 
-  let drawn_lines: [Point, Direction][] = [];
+  let drawn_lines: [Point, Direction, string][] = [];
 
   const redraw = () => {
-    drawn_lines.forEach(([point, direction]) => {
-      drawDot(point);
-      drawDot(getDelta(point, direction));
-      drawLine(point, direction);
+    drawn_lines.forEach(([point, direction, color]) => {
+      drawDot(point, color);
+      drawDot(getDelta(point, direction), color);
+      drawLine(point, direction, color);
     });
   }
 
