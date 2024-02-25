@@ -1,26 +1,29 @@
 - name: bright
-  hex: "#FDF1E4"
+  hex: "#FDF5EC"
 
 - name: light
-  hex: "#FAE2C8"
+  hex: "#FCEBDA"
 
 - name: black
   hex: "#0D1821"
 
-- name: vibrantviolet
-  hex: "#FF4B3E"
-
-- name: vibrantblue
-  hex: "#0F186B"
-
-- name: coralpop
-  hex: "#F4442E"
-
-- name: navy
+- name: marine
   hex: "#118AB2"
+
+- name: aqua
+  hex: "#1FB7EA"
 
 - name: tomato
   hex: "#F4442E"
+
+- name: foliage
+  hex: "#337357"
+
+- name: gold
+  hex: "#FFD23F"
+
+- name: velvet
+  hex: "#5E1675"
 
 - name: jade
   hex: "#22AA78"

@@ -28,20 +28,19 @@ ${{ color.name }}: {{ color.hex }};
   margin-right: 1rem;
 }
 .nav-title {
-  color: $coralpop;
+  color: $tomato;
   margin-right: 2rem;
   font-size: 2rem;
 }
 .nav-link {
   margin: 0 0.5rem;
   font-size: 0.8rem;
-  color: $vibrantviolet;
-  text-decoration-color: $vibrantblue;
-  text-decoration-thickness: 2px;
+  color: $marine;
+  text-decoration: underline solid $aqua 2px;
   font-size: 1.1rem;
 }
 .nav-link:hover {
-  color: $vibrantblue
+  color: $aqua
 }
 
 // Disable scrollbars and 

@@ -3,7 +3,7 @@ let COLORS;
 const main = () => {
     const CANVAS_ELEMENT_ID = "canvas";
     const USABLE_COLORS = [
-        COLORS.tomato, COLORS.jade, COLORS.purpur
+        COLORS.tomato, COLORS.foliage, COLORS.velvet, COLORS.gold
     ];
     const strHash = (s) => {
         let hash = 0;
@@ -77,6 +77,7 @@ const main = () => {
         drawDot(getDelta(point, direction), color);
         CTX.beginPath();
         CTX.strokeStyle = color;
+        CTX.lineWidth = 1;
         CTX.moveTo(...canvasCoordinates(point));
         CTX.lineTo(...canvasCoordinates(getDelta(point, direction)));
         CTX.closePath();
