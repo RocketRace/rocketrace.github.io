@@ -1,8 +1,8 @@
 - name: bright
-  hex: "#FDF5EC"
+  hex: "#FCEBDA"
 
 - name: light
-  hex: "#FCEBDA"
+  hex: "#F0E0D0"
 
 - name: black
   hex: "#0D1821"
