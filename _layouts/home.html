@@ -3,17 +3,19 @@ layout: default
 ---
 
 <div class="home">
-    <h2 class="page-title">Posts</h2>
+    {% comment %} <h2 class="page-title">Recent posts</h2> {% endcomment %}
     <ul class="feed">
       {%- for post in site.posts -%}
       <li class="feed-entry">
-        <span class="published-at">Published at {{ post.date | date: "%b %-d, %Y" }}</span>
-        <h3 class="excerpt-title">
-          <a href="{{ post.url | relative_url }}">
+        <div class="feed-header">  
+          <a class="excerpt-title" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
-        </h3>
-        {{ post.excerpt }}
+          <span class="published-at">Published at {{ post.date | date: "%b %-d, %Y" }}</span>
+        </div>
+        <div class="excerpt-content">
+          {{ post.excerpt }}
+        </div>
       </li>
       {%- else -%}
         uh oh, no posts

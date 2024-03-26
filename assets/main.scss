@@ -30,17 +30,40 @@ ${{ color.name }}: {{ color.hex }};
 .nav-title {
   color: $tomato;
   margin-right: 2rem;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .nav-link {
   margin: 0 0.5rem;
   font-size: 0.8rem;
   color: $marine;
   text-decoration: underline solid $aqua 2px;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 .nav-link:hover {
   color: $aqua
+}
+// Section titles
+.page-title {
+  color: $marine;
+  font-weight: 100;
+}
+// Post feed
+.feed {
+  padding: 0
+}
+.feed-entry {
+  list-style: none;
+}
+.feed-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.excerpt-title {
+  color: $marine;
+  text-decoration: underline solid $aqua 2px;
+  font-size: 1.2rem;
 }
 
 // Disable scrollbars and 
@@ -72,21 +95,23 @@ html, body {
 }
 body {
   background-color: $bright;
+  font-family: "Noto Sans";
 }
 .content {
   background-color: rgba($color: $light, $alpha: 0.9);
-  padding: 2rem;
 }
 @media screen and (max-width: 849px) {
   .content {
     width: fit-content;
+    padding: 2rem 3rem;
   }
 }
 @media screen and (min-width: 850px) {
   .content {
     margin: 2rem;
     border-radius: 0.5rem;
-    width: 65%
+    max-width: 55%;
+    padding: 3rem 5rem;
   }
 }
 
