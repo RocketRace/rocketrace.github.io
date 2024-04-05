@@ -16,7 +16,6 @@ const main = () => {
 
   const getColor = (seed: Point): string => {
     const key = strHash(seed.toString()) % USABLE_COLORS.length;
-    console.log(key);
     return USABLE_COLORS[key]
   }
 

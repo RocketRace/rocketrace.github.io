@@ -14,7 +14,6 @@ const main = () => {
     };
     const getColor = (seed) => {
         const key = strHash(seed.toString()) % USABLE_COLORS.length;
-        console.log(key);
         return USABLE_COLORS[key];
     };
     const KEY = [0, 12, 15, 20, 24, 30, 36, 40, 45, 48, 60];
