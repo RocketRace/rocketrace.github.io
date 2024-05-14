@@ -1,5 +1,6 @@
 # site settings
 title: olivialta
+description: A blog about code and art
 
 # change blogpost url format
 collections:
