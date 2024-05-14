@@ -1,7 +1,5 @@
 # site settings
 title: olivialta
-github_username: RocketRace
-url: "https://rocketrace.github.io"
 
 # change blogpost url format
 collections:
@@ -14,7 +12,6 @@ excerpt_separator: <!--more-->
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-optional-front-matter
 
 # exclude from processing
 exclude:

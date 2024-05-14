@@ -1,12 +1,12 @@
+---
+---
 // vscode HATES liquid
 // this lets me use the color variables in css
 // as well as elsewhere in the page content,
 // e.g. in a <canvas>
-/* beautify ignore:start */
 {% for color in site.data.colors %}
 ${{ color.name }}: {{ color.hex }};
 {% endfor %}
-/* beautify ignore:end */
 
 // site header
 .nav-header {
