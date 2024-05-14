@@ -4,14 +4,17 @@ title: About
 permalink: /about
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I'm Olivia. I'm an artist by heart and programmer by study. My enthusiasm stretches
+from mathematics to software to music to video games to conceptual art, but I have
+a particular passion for esoteric programming. I blog about my periodic fascinations.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+The background image to this site is randomly generated! It's based on patterns I 
+used to scribble onto graph paper as a teen.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+If you like this blog, you might also like:
+* My [esolangs.org][my esolangs] page. I've designed and implemented a number of
+  [esoteric programming languages][esolangs] that demonstrate beautiful and unexpected
+  aspects of what programming can be.
 
-[jekyll-organization]: https://github.com/jekyll
+[my esolangs]: https://esolangs.org/wiki/User:RocketRace
+[esolangs]: https://en.wikipedia.org/wiki/Esoteric_programming_language
