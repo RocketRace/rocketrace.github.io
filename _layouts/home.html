@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="home">
+    {{ content }}
     {% comment %} <h2 class="page-title">Recent posts</h2> {% endcomment %}
     <ul class="feed">
       {%- for post in site.posts -%}
