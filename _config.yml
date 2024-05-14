@@ -10,10 +10,6 @@ collections:
 
 excerpt_separator: <!--more-->
 
-kramdown:
-  syntax_highlighter_opts:
-    default_lang: python3
-
 plugins:
   - jekyll-feed
   - jekyll-sitemap
