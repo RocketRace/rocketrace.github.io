@@ -82,6 +82,11 @@ h1, h2 {
   color: $marine;
   text-decoration: underline solid $aqua 2px;
   font-size: 1.2rem;
+  margin-right: 2rem;
+}
+
+.published-at {
+  flex-shrink: 4;
 }
 
 // Disable scrollbars and 
