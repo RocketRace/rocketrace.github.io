@@ -143,6 +143,19 @@ body {
   }
 }
 
+.posts-link {
+  color: $marine;
+  text-decoration: underline solid $aqua 2px;
+}
+
+.posts-link:hover {
+  color: $aqua
+}
+
+.rss-subscribe {
+  font-style: italic;
+}
+
 // tables
 table {
   margin-left: auto; 
