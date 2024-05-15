@@ -12,6 +12,11 @@ permalink: /blog
       </a>
       <span class="published-at">Published at {{ post.date | date: "%b %-d, %Y" }}</span>
     </div>
+    <ul class="categories">
+      {% for category in post.categories %}
+        <li class="category">{{ category }}</li>
+      {% endfor %}
+    </ul>
     <div class="excerpt-content">
       {{ post.excerpt }}
     </div>

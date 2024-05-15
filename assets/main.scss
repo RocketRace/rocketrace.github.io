@@ -11,6 +11,7 @@ ${{ color.name }}: {{ color.hex }};
 }
 {% endfor %}
 
+// nav
 nav {
   max-width: 100%;
   display: flex;
@@ -87,6 +88,7 @@ h1, h2 {
 
 .published-at {
   flex-shrink: 4;
+  font-style: italic;
 }
 
 // Disable scrollbars and 
@@ -148,6 +150,7 @@ body {
   }
 }
 
+// big links
 .posts-link {
   color: $marine;
   text-decoration: underline solid $aqua 2px;
@@ -157,6 +160,7 @@ body {
   color: $aqua
 }
 
+// rss
 .rss-subscribe {
   font-style: italic;
 }
@@ -171,6 +175,22 @@ table {
 
 table, th, td {
   border: 1px solid $grey;
+}
+
+// categories
+.categories {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-top: 0.5rem;
+}
+
+.category {
+  list-style: none;
+  margin-right: 1rem;
+  padding: 0 0.5rem;
+  border-radius: 5px;
+  background-color: $gold;
 }
 
 // Code blocks
