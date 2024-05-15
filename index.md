@@ -4,7 +4,7 @@ layout: default
 
 <h2>Recent blogposts (<a class="posts-link" href="{{ '/blog' | relative_url }}">View all</a>)</h2>
 <ul class="feed">
-  {%- for post in site.posts limit:10 -%}
+  {%- for post in site.posts limit: 10 -%}
   <li class="feed-entry">
     <div class="feed-header">  
       <a class="excerpt-title" href="{{ post.url | relative_url }}">
