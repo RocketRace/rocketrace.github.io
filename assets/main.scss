@@ -11,42 +11,36 @@ ${{ color.name }}: {{ color.hex }};
 }
 {% endfor %}
 
-// site header
-.nav-header {
-  display: flex;
-  flex-direction: column;
-}
-
-.nav {
+nav {
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   height: 72px;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
+}
+
+article {
+  padding: 0 1rem;
 }
 
 .header-divider {
-  margin: 2rem 0;
+  margin: 2rem 1rem;
   border-style: dashed;
-}
-
-.nav-image {
-  height: 72px;
-  margin-right: 1rem;
 }
 
 .nav-title {
   color: $tomato;
   margin-right: 2rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .nav-link {
   margin: 0 0.5rem;
-  font-size: 0.8rem;
+  font-size: 1.25rem;
   color: $marine;
   text-decoration: underline solid $aqua 2px;
-  font-size: 1.5rem;
 }
 
 .nav-link:hover {
@@ -101,7 +95,7 @@ body {
 }
 
 // Center the main content
-.content-flex {
+body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,8 +118,7 @@ body {
 // responsiveness
 @media screen and (max-width: 849px) {
   .content {
-    width: fit-content;
-    padding: 2rem 3rem;
+    padding: 2rem 0;
   }
 }
 
@@ -143,6 +136,7 @@ table {
   border-spacing: 0;
   border-radius: 2px;
   margin: 0 10%;
+  overflow-x: scroll;
 }
 
 table, th, td {
