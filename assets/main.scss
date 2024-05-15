@@ -6,6 +6,9 @@
 // e.g. in a <canvas>
 {% for color in site.data.colors %}
 ${{ color.name }}: {{ color.hex }};
+.{{ color.name }} {
+  color: ${{color.name}};
+}
 {% endfor %}
 
 // site header
@@ -51,7 +54,7 @@ ${{ color.name }}: {{ color.hex }};
 }
 
 // Section titles
-.page-title {
+h1, h2 {
   color: $marine;
   font-weight: normal;
 }
@@ -108,6 +111,7 @@ body {
   min-height: 125%;
 }
 
+// main colors and fonts
 body {
   background-color: $bright;
   font-family: "Noto Sans";
@@ -117,6 +121,7 @@ body {
   background-color: rgba($color: $light, $alpha: 0.9);
 }
 
+// responsiveness
 @media screen and (max-width: 849px) {
   .content {
     width: fit-content;
@@ -131,6 +136,17 @@ body {
     max-width: 55%;
     padding: 3rem 5rem;
   }
+}
+
+// tables
+table {
+  border-spacing: 0;
+  border-radius: 2px;
+  margin: 0 10%;
+}
+
+table, th, td {
+  border: 1px solid $grey;
 }
 
 // Code blocks
