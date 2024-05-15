@@ -127,8 +127,10 @@ body {
 // responsiveness
 @media screen and (max-width: 899px) {
   .content {
-    padding: 2rem 3rem;
-    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1rem;
+    width: 70%;
   }
 }
 
