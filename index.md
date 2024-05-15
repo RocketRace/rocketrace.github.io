@@ -20,5 +20,3 @@ layout: default
     uh oh, no posts
   {%- endfor -%}
 </ul>
-
-
