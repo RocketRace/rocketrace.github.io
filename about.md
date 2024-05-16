@@ -4,9 +4,9 @@ title: About
 permalink: /about
 ---
 
-I'm Olivia. I'm an artist by heart and programmer by study. My enthusiasm stretches
-from mathematics to software to music to video games to conceptual art, but I have
-a particular passion for esoteric programming. I blog about my periodic fascinations.
+I'm Olivia. My blog, and consequently my enthusiasm, stretches from mathematics to
+software to music to video games to conceptual art, but I have a particular passion
+for esoteric programming. I'm a programmer by study, and artist by heart.
 
 The background image to this site is randomly generated! It's based on patterns I 
 used to scribble onto graph paper as a teen.
