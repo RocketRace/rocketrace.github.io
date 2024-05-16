@@ -15,6 +15,10 @@ If you like this blog, you might also like:
 * My [esolangs.org][my esolangs] page. I've designed and implemented a number of
   [esoteric programming languages][esolangs] that demonstrate beautiful and unexpected
   aspects of what programming can be.
+* My [GitHub][github] has the projects I haven't written about here.
+* The Esolangs [Code Guessing][code guessing] competition, featuring imaginative and cursed solutions to simple problems.
 
 [my esolangs]: https://esolangs.org/wiki/User:RocketRace
 [esolangs]: https://en.wikipedia.org/wiki/Esoteric_programming_language
+[github]: https://github.com/RocketRace
+[code guessing]: https://cg.esolangs.gay
