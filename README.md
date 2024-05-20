@@ -13,3 +13,5 @@ Built using Jekyll.
   * Colorblindness awareness?
 * either shrink or fancify the logo (with same spacing)
 * that one blogpost about prime numbers
+* sidebar / footer
+* favicon
