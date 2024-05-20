@@ -19,11 +19,20 @@
 - name: aqua
   hex: "#1FB7EA"
 
+- name: fresh
+  hex: "#6ACFF1"
+
 - name: tomato
   hex: "#F4442E"
 
+- name: coral
+  hex: "#F99F9F"
+
 - name: foliage
   hex: "#337357"
+
+- name: lime
+  hex: "#7FC7A8"
 
 - name: gold
   hex: "#FFD23F"
