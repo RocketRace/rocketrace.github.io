@@ -51,6 +51,11 @@ hr {
   margin: 0 0.5rem;
   font-size: 1.25rem;
 }
+// don't mark the navbar as visited
+.nav-link:visited:not(:hover) {
+  color: $marine;
+  text-decoration-color: $marine;
+}
 
 // Section titles
 h1, h2 {
