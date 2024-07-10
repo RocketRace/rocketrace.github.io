@@ -38,7 +38,7 @@ nav {
 
 hr {
   margin: 2rem 0;
-  border-style: dashed;
+  border: 2px dashed rgba($color: $tomato, $alpha: 0.4);
 }
 
 .nav-title {
@@ -50,12 +50,6 @@ hr {
 .nav-link {
   margin: 0 0.5rem;
   font-size: 1.25rem;
-  color: $marine;
-  text-decoration: underline solid $aqua 2px;
-}
-
-.nav-link:hover {
-  color: $aqua
 }
 
 // Section titles
@@ -137,10 +131,15 @@ body {
   }
 }
 
-// big links
+// links
 a {
   color: $marine;
   text-decoration: underline solid $marine 2px;
+}
+
+a:visited {
+  color: $velvet;
+  text-decoration: underline solid $velvet 2px;
 }
 
 a:hover {
