@@ -2,16 +2,20 @@
 layout: default
 ---
 <article>
-  <header class="post-header">
-    <h1 class="page-title">{{ page.title | escape }}</h1>
-    <ul class="categories">
+  <div class="post-header">  
+    <h2>
+      <a class="header-link" href="{{ post.url | relative_url }}">
+        {{ page.title | escape }}
+      </a>
+    </h2>
+    <span class="post-metadata">
+      <time datetime="{{ post.date | date_to_xmlschema }}" >
+        {{ page.date | date: "%b %-d, %Y" }}
+      </time>
       {% for category in page.categories %}
-      <li class="category">{{ category }}</li>
+        | <span class="category">{{ category }}</span>
       {% endfor %}
-    </ul>
-  </header>
-  <time class="published-at" datetime="{{ page.date | date_to_xmlschema }}" >
-    {{ page.date | date: "%b %-d, %Y" }}
-  </time>
+    </span>
+  </div>
   {{ content }}
 </article>

@@ -41,22 +41,21 @@ hr {
   border: 2px dashed rgba($color: $tomato, $alpha: 0.4);
 }
 
+// navbar
 .nav-title {
   color: $tomato;
   margin-right: 2rem;
   font-size: 2.5rem;
 }
-
 .nav-link {
   margin: 0 0.5rem;
   font-size: 1.25rem;
 }
-
-.static-link, .static-link:visited {
+.nav-link:visited {
   color: $marine;
   text-decoration-color: $marine;
 }
-.static-link:hover {
+.nav-link:visited:hover {
   color: $aqua;
   text-decoration-color: $aqua;
 }
@@ -66,6 +65,7 @@ h1, h2, h3 {
   color: $tomato;
   font-weight: normal;
 }
+
 
 // Disable scrollbars and 
 // enable proper canvas sizing
@@ -128,19 +128,34 @@ body {
 }
 
 // links
-a, a.static-link {
+a {
   color: $marine;
-  text-decoration: underline solid $marine 2px;
+  text-decoration: none;
 }
 
 a:visited {
   color: $velvet;
-  text-decoration: underline solid $velvet 2px;
+  text-decoration: none;
 }
 
-a:hover, a.static-link:hover {
+a:hover {
   color: $aqua;
   text-decoration: underline solid $aqua 2px;
+}
+
+.static-link, .static-link:hover, .static-link:visited {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a.header-link, a.header-link:visited {
+  color: $tomato;
+  text-decoration: none;
+}
+
+a.header-link:hover {
+  color: $tomato;
+  text-decoration: underline solid $tomato 2px;
 }
 
 // rss

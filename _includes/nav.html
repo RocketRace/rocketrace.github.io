@@ -1,13 +1,15 @@
 <nav class="nav">
   {% comment %} <img class="nav-image" src="{{"/assets/images/icon.png" | relative_url }}" /> {% endcomment %}
   <h1 class="nav-title">
-    {{ site.title | escape }}
+    <a class="header-link" href="{{ "/" | relative_url }}">
+      {{ site.title | escape }}
+    </a>
   </h1>
   <div class="nav-links">
-    <a class="nav-link static-link" href="{{ "/" | relative_url }}">home</a>
-    <a class="nav-link static-link" href="{{ "/blog" | relative_url }}">blog</a>
-    <a class="nav-link static-link" href="{{ "/about" | relative_url }}">about</a>
-    <a class="nav-link static-link" href="{{ "/projects" | relative_url }}">projects</a>
+    <a class="nav-link" href="{{ "/" | relative_url }}">home</a>
+    <a class="nav-link" href="{{ "/blog" | relative_url }}">blog</a>
+    <a class="nav-link" href="{{ "/about" | relative_url }}">about</a>
+    <a class="nav-link" href="{{ "/projects" | relative_url }}">projects</a>
   </div>
   </nav>
 <hr />
