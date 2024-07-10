@@ -1,0 +1,15 @@
+<div class="post-header">  
+  <{{ include.depth }}>
+    <a class="header-link" href="{{ post.url | relative_url }}">
+      {{ include.post.title | escape }}
+    </a>
+  </{{ include.depth }}>
+  <span class="post-metadata">
+    <time datetime="{{ post.date | date_to_xmlschema }}" >
+      {{ include.post.date | date: "%b %-d, %Y" }}
+    </time>
+    {% for category in include.post.categories %}
+      | <span class="category">{{ category }}</span>
+    {% endfor %}
+  </span>
+</div>
