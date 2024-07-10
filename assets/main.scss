@@ -12,7 +12,7 @@ ${{ color.name }}: {{ color.hex }};
 }
 {% endfor %}
 
-// nav
+// navbar
 nav {
   max-width: 100%;
   display: flex;
@@ -37,27 +37,30 @@ nav {
   }
 }
 
-hr {
-  border: 2px dashed rgba($color: $tomato, $alpha: 0.4);
-}
-
-// navbar
 .nav-title {
   color: $tomato;
   margin-right: 2rem;
   font-size: 2.5rem;
 }
+
 .nav-link {
   margin: 0 0.5rem;
   font-size: 1.25rem;
 }
+
 .nav-link:visited {
   color: $marine;
   text-decoration-color: $marine;
 }
+
 .nav-link:visited:hover {
   color: $aqua;
   text-decoration-color: $aqua;
+}
+
+// dividers
+hr {
+  border: 2px dashed rgba($color: $tomato, $alpha: 0.4);
 }
 
 // Section titles
@@ -67,8 +70,7 @@ h1, h2, h3 {
 }
 
 
-// Disable scrollbars and 
-// enable proper canvas sizing
+// disable scrollbars and enable proper canvas sizing
 html,
 body {
   width: 100%;
@@ -86,7 +88,7 @@ body {
   z-index: -1;
 }
 
-// Center the main content
+// center the main content
 body {
   display: flex;
   flex-direction: column;
