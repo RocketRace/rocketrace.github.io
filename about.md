@@ -4,7 +4,7 @@ title: About
 permalink: /about
 ---
 
-I'm Olivia. My blog, and consequently my enthusiasm, stretches from mathematics to
+I'm Olivia. My blog, and also my enthusiasm, stretches from mathematics to
 software to music to video games to conceptual art, but I have a particular passion
 for esoteric programming. I'm a programmer by study, and artist by heart.
 
