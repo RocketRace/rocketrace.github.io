@@ -13,7 +13,7 @@ permalink: /blog
         </a>
       </h3>
       <span class="post-metadata">
-        <time class="published-at" datetime="{{ post.date | date_to_xmlschema }}" >
+        <time datetime="{{ post.date | date_to_xmlschema }}" >
           {{ post.date | date: "%b %-d, %Y" }}
         </time>
         {% for category in post.categories %}

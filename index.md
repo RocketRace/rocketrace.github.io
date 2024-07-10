@@ -12,12 +12,15 @@ layout: default
           {{ post.title | escape }}
         </a>
       </h3>
-      {% for category in post.categories %}
-        <span class="category">{{ category }}</span>
-      {% endfor %}
-      <br />
+      <span class="post-metadata">
+        <time datetime="{{ post.date | date_to_xmlschema }}" >
+          {{ post.date | date: "%b %-d, %Y" }}
+        </time>
+        {% for category in post.categories %}
+          | <span class="category">{{ category }}</span>
+        {% endfor %}
+      </span>
     </div>
-    <time class="published-at">{{ post.date | date: "%b %-d, %Y" }}</time>
     <div class="excerpt-content">
       {{ post.excerpt }}
     </div>

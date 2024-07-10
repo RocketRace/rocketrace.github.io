@@ -52,16 +52,19 @@ hr {
   font-size: 1.25rem;
 }
 
+.static-link, .static-link:visited {
+  color: $marine;
+  text-decoration-color: $marine;
+}
+.static-link:hover {
+  color: $aqua;
+  text-decoration-color: $aqua;
+}
+
 // Section titles
 h1, h2, h3 {
   color: $tomato;
   font-weight: normal;
-}
-
-
-.published-at {
-  flex-shrink: 4;
-  font-style: italic;
 }
 
 // Disable scrollbars and 
@@ -125,7 +128,7 @@ body {
 }
 
 // links
-a {
+a, a.static-link {
   color: $marine;
   text-decoration: underline solid $marine 2px;
 }
@@ -135,7 +138,7 @@ a:visited {
   text-decoration: underline solid $velvet 2px;
 }
 
-a:hover {
+a:hover, a.static-link:hover {
   color: $aqua;
   text-decoration: underline solid $aqua 2px;
 }
