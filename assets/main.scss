@@ -21,6 +21,7 @@ nav {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 899px) {
@@ -37,7 +38,6 @@ nav {
 }
 
 hr {
-  margin: 2rem 0;
   border: 2px dashed rgba($color: $tomato, $alpha: 0.4);
 }
 
@@ -51,25 +51,13 @@ hr {
   margin: 0 0.5rem;
   font-size: 1.25rem;
 }
-// don't mark the navbar as visited
-.nav-link:visited:not(:hover) {
-  color: $marine;
-  text-decoration-color: $marine;
-}
 
 // Section titles
-h1, h2 {
-  color: $marine;
+h1, h2, h3 {
+  color: $tomato;
   font-weight: normal;
 }
 
-// Post feed
-.excerpt-title {
-  color: $marine;
-  text-decoration: underline solid $aqua 2px;
-  font-size: 1.2rem;
-  margin-right: 2rem;
-}
 
 .published-at {
   flex-shrink: 4;
@@ -154,7 +142,8 @@ a:hover {
 
 // rss
 .rss-subscribe {
-  font-style: italic;
+  color: $dark;
+  font-size: 0.9rem;
 }
 
 // tables
@@ -169,20 +158,24 @@ table, th, td {
   border: 1px solid $grey;
 }
 
-// categories
-.categories {
-  display: flex;
-  flex-direction: row;
+// feed
+.feed {
+  list-style-type: none;
   padding-left: 0;
-  margin-top: 0.5rem;
+}
+
+// post headers
+.post-metadata {
+  color: $dark;
+  font-size: 0.9rem;
 }
 
 .category {
   list-style: none;
-  margin-right: 1rem;
   padding: 0 0.5rem;
   border-radius: 5px;
-  background-color: $gold;
+  height: fit-content;
+  background-color: rgba($color: $gold, $alpha: 0.5);
 }
 
 // Code blocks

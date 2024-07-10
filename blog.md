@@ -6,17 +6,21 @@ permalink: /blog
 <ul class="feed">
   {%- for post in site.posts -%}
   <li class="feed-entry">
-    <div class="feed-header">  
-      <a class="excerpt-title" href="{{ post.url | relative_url }}">
-        {{ post.title | escape }}
-      </a>
-      <span class="published-at">Published at {{ post.date | date: "%b %-d, %Y" }}</span>
+    <div class="post-header">  
+      <h3>
+        <a class="big-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+      <span class="post-metadata">
+        <time class="published-at" datetime="{{ post.date | date_to_xmlschema }}" >
+          {{ post.date | date: "%b %-d, %Y" }}
+        </time>
+        {% for category in post.categories %}
+          | <span class="category">{{ category }}</span>
+        {% endfor %}
+      </span>
     </div>
-    <ul class="categories">
-      {% for category in post.categories %}
-        <li class="category">{{ category }}</li>
-      {% endfor %}
-    </ul>
     <div class="excerpt-content">
       {{ post.excerpt }}
     </div>

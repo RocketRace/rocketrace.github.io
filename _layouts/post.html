@@ -4,14 +4,14 @@ layout: default
 <article>
   <header class="post-header">
     <h1 class="page-title">{{ page.title | escape }}</h1>
-    <time class="published-at" datetime="{{ page.date | date_to_xmlschema }}" >
-      Published at {{ page.date | date: "%b %-d, %Y" }}
-    </time>
     <ul class="categories">
       {% for category in page.categories %}
-        <li class="category">{{ category }}</li>
+      <li class="category">{{ category }}</li>
       {% endfor %}
     </ul>
   </header>
+  <time class="published-at" datetime="{{ page.date | date_to_xmlschema }}" >
+    {{ page.date | date: "%b %-d, %Y" }}
+  </time>
   {{ content }}
 </article>
