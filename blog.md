@@ -8,7 +8,7 @@ permalink: /blog
   <li class="feed-entry">
     <div class="post-header">  
       <h3>
-        <a href="{{ post.url | relative_url }}">
+        <a class="header-link" href="{{ post.url | relative_url }}">
           {{ post.title | escape }}
         </a>
       </h3>

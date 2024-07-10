@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<h2>Recent blogposts (<a class="static-link" href="{{ '/blog' | relative_url }}">View all</a>)</h2>
+<h2>Recent blogposts (<a class="header-link" href="{{ '/blog' | relative_url }}">View all</a>)</h2>
 <div class="feed">
   {%- for post in site.posts limit: 10 -%}
   <div class="feed-entry">
     <div class="post-header">  
       <h3>
-        <a href="{{ post.url | relative_url }}">
+        <a class="header-link" href="{{ post.url | relative_url }}">
           {{ post.title | escape }}
         </a>
       </h3>
