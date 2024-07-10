@@ -4,6 +4,8 @@ The repository containing [my site].
 
 Built using Jekyll.
 
+`bundle exec jekyll serve`
+
 [my site]: https://rocketrace.github.io
 
 # Todo

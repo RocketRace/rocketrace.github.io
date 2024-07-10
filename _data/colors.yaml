@@ -1,8 +1,8 @@
 - name: bright
-  hex: "#FFF0E0"
+  hex: "#FFF0E7"
 
 - name: light
-  hex: "#FAE7D7"
+  hex: "#FFF0E7"
 
 - name: grey
   hex: "#a89c92"
@@ -14,16 +14,16 @@
   hex: "#0D1821"
 
 - name: marine
-  hex: "#118AB2"
+  hex: "#008AFF"
 
 - name: aqua
-  hex: "#1FB7EA"
+  hex: "#1FB7FF"
 
 - name: fresh
-  hex: "#6ACFF1"
+  hex: "#6ACFFF"
 
 - name: tomato
-  hex: "#F4442E"
+  hex: "#FF2400"
 
 - name: coral
   hex: "#F99F9F"
