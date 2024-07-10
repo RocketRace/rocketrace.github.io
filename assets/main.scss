@@ -137,13 +137,14 @@ body {
 }
 
 // big links
-.posts-link {
+a {
   color: $marine;
-  text-decoration: underline solid $aqua 2px;
+  text-decoration: underline solid $marine 2px;
 }
 
-.posts-link:hover {
-  color: $aqua
+a:hover {
+  color: $aqua;
+  text-decoration: underline solid $aqua 2px;
 }
 
 // rss
