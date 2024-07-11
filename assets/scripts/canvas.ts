@@ -1,5 +1,5 @@
 let COLORS: {[s in string]: string};
-const main = () => {
+addEventListener("load", _ => {
   const CANVAS_ELEMENT_ID = "canvas";
 
   const USABLE_COLORS = [
@@ -236,6 +236,4 @@ const main = () => {
   for (let i = 0; i < 1000; i++) {
     drawRandomExpanse(occupied);
   }
-}
-
-addEventListener("load", _ => main());
+});

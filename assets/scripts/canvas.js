@@ -1,6 +1,6 @@
 "use strict";
 let COLORS;
-const main = () => {
+addEventListener("load", _ => {
     const CANVAS_ELEMENT_ID = "canvas";
     const USABLE_COLORS = [
         COLORS.tomato, COLORS.foliage, COLORS.velvet, COLORS.gold
@@ -173,5 +173,4 @@ const main = () => {
     for (let i = 0; i < 1000; i++) {
         drawRandomExpanse(occupied);
     }
-};
-addEventListener("load", _ => main());
+});
