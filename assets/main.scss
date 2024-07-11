@@ -45,16 +45,22 @@ nav {
 
 .nav-link {
   margin: 0 0.5rem;
-  font-size: 0.8rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
-// all links
-a {
+
+.nav-link:visited {
   color: $marine;
-  text-decoration: underline solid $aqua 2px;
+  text-decoration-color: $marine;
 }
-a:hover {
-  color: $aqua
+
+.nav-link:visited:hover {
+  color: $aqua;
+  text-decoration-color: $aqua;
+}
+
+// dividers
+hr {
+  border: 2px dashed rgba($color: $tomato, $alpha: 0.4);
 }
 
 // Section titles
@@ -62,22 +68,7 @@ h1, h2, h3 {
   color: $tomato;
   font-weight: normal;
 }
-// Post feed
-.feed {
-  padding: 0
-}
-.feed-entry {
-  list-style: none;
-}
-.feed-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
-}
-.excerpt-title {
-  font-size: 1.2rem;
-}
+
 
 // disable scrollbars and enable proper canvas sizing
 html,
