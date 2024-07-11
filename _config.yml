@@ -15,6 +15,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+kramdown:
+  math_engine: mathjax
+
 # exclude from processing
 exclude:
   - .sass-cache/
