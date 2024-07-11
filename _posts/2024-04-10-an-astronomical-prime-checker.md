@@ -3,6 +3,7 @@ layout: post
 title:  "An Astronomical Prime Checker"
 slug: prime-checker
 categories: programming mathematics
+published: false
 ---
 
 For [round #17][cg17] of the [Esolangs Code Guessing challenge][cg], I submitted a strange program that determines whether an input number is prime. It turns out that this program has a time complexity on the order of $O\left({\left(N^2\right)}^{N^2}\right)$, which is astronomical! In order to understand this staggering figure, and to verify that the program actually checks for prime numbers, we'll take a brief tour through abstract algebra. We'll hopefully emerge slightly less confused!
@@ -44,7 +45,7 @@ fn is_field(set: List<Int>, plus: Matrix<Int>, times: Matrix<Int>) -> Bool = {
 // I will explain this all!
 ```
 
-## A primer on abstract algebra
+## A primer on set theory
 
 
 
