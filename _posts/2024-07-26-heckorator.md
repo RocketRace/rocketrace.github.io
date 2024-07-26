@@ -21,7 +21,7 @@ def handle_click():
     print("First button clicked!")
 ```
 
-<br>
+(you may have to scroll for this one)
 
 ```py
 from heckorator import _
