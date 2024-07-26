@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "An Astronomical Prime Checker"
+title: An Astronomical Prime Checker
 slug: prime-checker
 categories: programming mathematics
 published: false
