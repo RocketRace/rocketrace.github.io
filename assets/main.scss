@@ -48,14 +48,14 @@ nav {
   font-size: 1.25rem;
 }
 
-.nav-link:visited {
+.nav-link {
   color: $marine;
-  text-decoration-color: $marine;
+  text-decoration: underline solid rgba($color: $marine, $alpha: 0.5) 2px;
 }
 
-.nav-link:visited:hover {
+.nav-link:hover {
   color: $aqua;
-  text-decoration-color: $aqua;
+  text-decoration: underline solid rgba($color: $aqua, $alpha: 0.5) 2px;
 }
 
 // dividers
@@ -132,22 +132,12 @@ body {
 // links
 a {
   color: $marine;
-  text-decoration: none;
-}
-
-a:visited {
-  color: $velvet;
-  text-decoration: none;
+  text-decoration: underline solid rgba($color: $marine, $alpha: 0.5) 2px;
 }
 
 a:hover {
   color: $aqua;
-  text-decoration: underline solid $aqua 2px;
-}
-
-.static-link, .static-link:hover, .static-link:visited {
-  color: inherit;
-  text-decoration: inherit;
+  text-decoration: underline solid rgba($color: $aqua, $alpha: 0.5) 2px;
 }
 
 a.header-link, a.header-link:visited {
