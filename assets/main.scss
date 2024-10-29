@@ -152,12 +152,12 @@ a:hover {
 
 a.header-link, a.header-link:visited {
   color: $accessibletomato;
-  text-decoration: rgba($color: $accessibletomato, $alpha: 0.2) 2px;
+  text-decoration: underline solid rgba($color: $accessibletomato, $alpha: 0.2) 2px;
 }
 
 a.header-link:hover {
   color: $accessibletomato;
-  text-decoration: $accessibletomato 2px;
+  text-decoration: underline solid $accessibletomato 2px;
 }
 
 // rss
