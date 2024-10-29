@@ -25,6 +25,9 @@
 - name: tomato
   hex: "#FF2400"
 
+- name: accessibletomato
+  hex: "#FF003B"
+
 - name: coral
   hex: "#F99F9F"
 

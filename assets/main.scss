@@ -38,7 +38,7 @@ nav {
 }
 
 .nav-title {
-  color: $tomato;
+  color: $accessibletomato;
   margin-right: 2rem;
   font-size: 2.5rem;
 }
@@ -65,7 +65,7 @@ hr {
 
 // Section titles
 h1, h2, h3 {
-  color: $tomato;
+  color: $accessibletomato;
   font-weight: normal;
 }
 
@@ -151,13 +151,13 @@ a:hover {
 }
 
 a.header-link, a.header-link:visited {
-  color: $tomato;
-  text-decoration: none;
+  color: $accessibletomato;
+  text-decoration: rgba($color: $accessibletomato, $alpha: 0.2) 2px;
 }
 
 a.header-link:hover {
-  color: $tomato;
-  text-decoration: underline solid $tomato 2px;
+  color: $accessibletomato;
+  text-decoration: $accessibletomato 2px;
 }
 
 // rss
