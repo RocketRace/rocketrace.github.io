@@ -5,9 +5,9 @@ slug: museokortti
 categories: small programming
 ---
 
-Recently[^1], the finnish digital museum card application (Museokortti) has had a major
-overhaul. The update was split into an entirely new app! I got a little curious with the 
-update, since it changed the way that users authenticate their museum card. Being an avid 
+Recently[^1], the finnish digital museum card application ([Museokortti][museokortti]) has had 
+a major overhaul. The update was split into an entirely new app! I got a little curious with 
+the update, since it changed the way that users authenticate their museum card. Being an avid 
 museum visitor and programmer, I decided to investigate how this new system works.
 
 <!--more-->
@@ -23,7 +23,7 @@ As far as I understand, the previous authentication flow went as follows:
 7. The database correlates the two logs together into a single visit
 
 It has been changed to:
-1. Your client generates a JSON web token based on a secret and formats is as a QR code
+1. Your client generates a [JSON web token][jwt] based on a secret and formats is as a QR code
    (this QR code is time-based and expires in a few minutes, after which a new one must be 
    generated)
 2. The museum reception scans and validates the QR code
@@ -62,7 +62,7 @@ A JWT has three parts: Header, payload, and signature. The header in this case i
 }
 ```
 ... which just tells us that this JWT is in fact a JWT, and that the signature is hashed using 
-the elliptic curve ES256 algorithm.
+the [elliptic curve ES256 algorithm][es256].
 
 The payload is the interesting part.
 
@@ -93,3 +93,7 @@ it's designed the way it is.
 
 [^1]: Okay it was a couple months ago. But I only finished this post now
 [^2]: I *did* double check because you can never be sure
+
+[jwt]: https://en.wikipedia.org/wiki/JSON_Web_Token
+[museokortti]: https://en.wikipedia.org/wiki/Museum_card_(Finland)
+[es256]: https://www.rfc-editor.org/rfc/rfc7518#section-3.1
