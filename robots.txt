@@ -5,6 +5,7 @@ User-agent: robotgirl
 User-agent: robotkindagirl
 User-agent: robotenby
 User-agent: robotetc
+User-agent: plant
 Allow: /
 
 # Copyright (c) 2024 ai.robots.txt
