@@ -164,6 +164,11 @@ table {
   border-radius: 2px;
 }
 
+// don't overflow images
+img {
+  max-width: 100%;
+}
+
 table, th, td {
   border: 1px solid $grey;
 }
