@@ -37,7 +37,21 @@
       <!-- prerendered tiling image for nojs clients -->
     </canvas>
     <main class="content">
-      {%- include nav.html -%}
+      <nav class="nav">
+        <h1 class="nav-title">
+          <a class="header-link" href="{{ "/" | relative_url }}">
+            {{ site.title | escape }}
+          </a>
+        </h1>
+        <div class="nav-links">
+          <a class="nav-link" href="{{ "/" | relative_url }}">home</a>
+          <a class="nav-link" href="{{ "/blog" | relative_url }}">blog</a>
+          <a class="nav-link" href="{{ "/about" | relative_url }}">about</a>
+          <a class="nav-link" href="{{ "/portfolio" | relative_url }}">portfolio</a>
+          <a class="nav-link" href="{{ "/breathing-geometry" | relative_url }}">breathe</a>
+        </div>
+      </nav>
+      <hr />
       {{ content }}
       <hr />
       <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
