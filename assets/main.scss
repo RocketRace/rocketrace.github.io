@@ -20,8 +20,8 @@ nav {
   height: 72px;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-  margin-bottom: 2rem;
+  padding: 1rem 0;
+  margin: 0.5rem;
 }
 
 @media screen and (max-width: 899px) {
@@ -39,18 +39,18 @@ nav {
 
 .nav-title {
   color: $accessibletomato;
-  margin-right: 2rem;
+  margin-right: 1rem;
   font-size: 2.5rem;
 }
 
 .nav-link {
   margin: 0 0.5rem;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
 }
 
 .nav-link {
   color: $marine;
-  text-decoration: underline solid rgba($color: $marine, $alpha: 0.5) 2px;
+  text-decoration: none;
 }
 
 .nav-link:hover {
@@ -111,21 +111,20 @@ main {
 }
 
 // responsiveness
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 799px) {
   main {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 1rem;
+    padding: 0.5rem 10%;
+    margin-top: 0.5rem;
     width: 70%;
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
   main {
     margin: 2rem;
     border-radius: 0.5rem;
     width: 50%;
-    padding: 3rem 5rem;
+    padding: 0.5rem 5rem;
   }
 }
 
