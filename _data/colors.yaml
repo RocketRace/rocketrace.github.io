@@ -43,8 +43,8 @@
 - name: velvet
   hex: "#5E1675"
 
+- name: purpur
+  hex: "#9D37BF"
+
 - name: jade
   hex: "#22AA78"
-
-- name: purpur
-  hex: "#8783D1"

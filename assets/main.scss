@@ -139,11 +139,29 @@ a:hover {
   text-decoration: underline solid rgba($color: $aqua, $alpha: 0.5) 2px;
 }
 
-a.header-link, a.header-link:visited {
+// make visited links only
+a:visited:not(.header-link, .title-link, .nav-link) {
+  color: $velvet;
+  text-decoration: underline solid rgba($color: $velvet, $alpha: 0.5) 2px;
+}
+
+a:visited:hover:not(.header-link, .title-link, .nav-link) {
+  color: $purpur;
+  text-decoration: underline solid rgba($color: $purpur, $alpha: 0.5) 2px;
+}
+
+// special kinds of links
+a.header-link {
   color: $accessibletomato;
   text-decoration: underline solid rgba($color: $accessibletomato, $alpha: 0.2) 2px;
 }
 
+a.title-link {
+  color: $accessibletomato;
+  text-decoration: none;
+}
+
+a.title-link:hover,
 a.header-link:hover {
   color: $accessibletomato;
   text-decoration: underline solid $accessibletomato 2px;
