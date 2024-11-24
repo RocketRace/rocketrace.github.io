@@ -32,6 +32,7 @@ If you like this site, you might enjoy
   * [rachel.cafe](https://rachel.cafe/)
   * [ultlang.github.io](https://ultlang.github.io/)
   * [zptr.cc](https://zptr.cc/)
+  * [balt.sno.mba](https://balt.sno.mba/)
 
 [my esolangs]: https://esolangs.org/wiki/User:RocketRace
 [esolangs]: https://en.wikipedia.org/wiki/Esoteric_programming_language
