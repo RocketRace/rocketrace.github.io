@@ -24,7 +24,7 @@ If you like this site, you might enjoy
   and cursed solutions to simple tasks, hosted frequently on the Esolangs Discord server!
   (Join in if you want!) My personal submissions are also [here][my cg], with commentary
   on each round.
-* Other cool websites! This list is in no particular order :)
+* Other cool websites! This list is in no particular order :) <em id="marker"></em>
   * [coral.shoes](https://coral.shoes/)
   * [olus2000.pl](https://olus2000.pl/)
   * [esoteric.codes](https://esoteric.codes/)
@@ -33,6 +33,20 @@ If you like this site, you might enjoy
   * [ultlang.github.io](https://ultlang.github.io/)
   * [zptr.cc](https://zptr.cc/)
   * [balt.sno.mba](https://balt.sno.mba/)
+
+<script defer>
+  // a tiny feature, but I prefer it like this
+  const marker = document.getElementById("marker");
+  const list = marker.nextSibling;
+  const links = [...list.children];
+  links.forEach(link => list.removeChild(link));
+  for (let i = links.length; i >= 0; i--) {
+    const j = Math.floor(Math.random() * i);
+    [links[i - 1], links[j]] = [links[j], links[i - 1]];
+  }
+  links.forEach(link => list.appendChild(link));
+  marker.innerText = "In fact, it's randomized!";
+</script>
 
 [my esolangs]: https://esolangs.org/wiki/User:RocketRace
 [esolangs]: https://en.wikipedia.org/wiki/Esoteric_programming_language
