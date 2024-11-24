@@ -40,7 +40,7 @@ If you like this site, you might enjoy
   const list = marker.nextElementSibling;
   const links = [...list.children];
   links.forEach(link => list.removeChild(link));
-  for (let i = links.length; i >= 0; i--) {
+  for (let i = links.length; i > 0; i--) {
     const j = Math.floor(Math.random() * i);
     [links[i - 1], links[j]] = [links[j], links[i - 1]];
   }
