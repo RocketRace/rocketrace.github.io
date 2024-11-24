@@ -37,7 +37,7 @@ If you like this site, you might enjoy
 <script defer>
   // a tiny feature, but I prefer it like this
   const marker = document.getElementById("marker");
-  const list = marker.nextSibling;
+  const list = marker.nextElementSibling;
   const links = [...list.children];
   links.forEach(link => list.removeChild(link));
   for (let i = links.length; i >= 0; i--) {
