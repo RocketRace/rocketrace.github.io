@@ -25,13 +25,13 @@ If you like this site, you might enjoy
   (Join in if you want!) My personal submissions are also [here][my cg], with commentary
   on each round.
 * Other cool websites! This list is in no particular order :)
-  * https://coral.shoes/
-  * https://olus2000.pl/
-  * https://esoteric.codes/
-  * http://razetime.github.io/
-  * https://rachel.cafe/
-  * https://ultlang.github.io/
-  * https://zptr.cc/
+  * [coral.shoes](https://coral.shoes/)
+  * [olus2000.pl](https://olus2000.pl/)
+  * [esoteric.codes](https://esoteric.codes/)
+  * [razetime.github.io](http://razetime.github.io/)
+  * [rachel.cafe](https://rachel.cafe/)
+  * [ultlang.github.io](https://ultlang.github.io/)
+  * [zptr.cc](https://zptr.cc/)
 
 [my esolangs]: https://esolangs.org/wiki/User:RocketRace
 [esolangs]: https://en.wikipedia.org/wiki/Esoteric_programming_language
