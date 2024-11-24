@@ -33,6 +33,7 @@ If you like this site, you might enjoy
   * [ultlang.github.io](https://ultlang.github.io/)
   * [zptr.cc](https://zptr.cc/)
   * [balt.sno.mba](https://balt.sno.mba/)
+  * [xxiivv.com](https://xxiivv.com/)
 
 <script defer>
   // a tiny feature, but I prefer it like this
