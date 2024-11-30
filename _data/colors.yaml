@@ -28,6 +28,9 @@
 - name: accessibletomato
   hex: "#FF003B"
 
+- name: darktomato
+  hex: "#CC002F"
+
 - name: coral
   hex: "#F99F9F"
 

@@ -65,7 +65,7 @@ hr {
 
 // Section titles
 h1, h2, h3 {
-  color: $accessibletomato;
+  color: $darktomato;
   font-weight: normal;
 }
 
@@ -149,8 +149,8 @@ a:visited:hover:not(.header-link, .title-link, .nav-link) {
 
 // special kinds of links
 a.header-link {
-  color: $accessibletomato;
-  text-decoration: underline solid rgba($color: $accessibletomato, $alpha: 0.2) 2px;
+  color: $darktomato;
+  text-decoration: underline solid rgba($color: $darktomato, $alpha: 0.2) 2px;
 }
 
 a.title-link {
@@ -158,8 +158,12 @@ a.title-link {
   text-decoration: none;
 }
 
-a.title-link:hover,
 a.header-link:hover {
+  color: $darktomato;
+  text-decoration: underline solid $darktomato 2px;
+}
+
+a.title-link:hover {
   color: $accessibletomato;
   text-decoration: underline solid $accessibletomato 2px;
 }
