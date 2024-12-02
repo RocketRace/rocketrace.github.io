@@ -72,7 +72,7 @@ specification for this one.) It's so astronomically far off from fitting the
 space for 2^6472 images it's not even worth calculating. I'll likely have to 
 resort to a simulacrum using a reasonably-tall document (so that regular 
 scrolling won't move the bar) and gamedev-esque 
-[Viewing-frustum culling][fancy culling].
+[viewing-frustum culling][fancy culling].
 
 I would ideally like to have the whole page on a single infinite scroll, like 
 all the information in this page is just at your (literal) fingertips. If only 
