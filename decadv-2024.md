@@ -66,7 +66,7 @@ JavaScript events and methods I could use for dynamically loading a list of
 otherwise-reasonable strategy of "compute a fixed full height for the body
 and populate the page as it becomes visible" is not feasible due to the simple
 fact that the maximum value you can plug into a `height` CSS property is on
-the order of 2^24 pixels. (Coincidence? That's very close to the 
+the order of 2^24 pixels on my Firefox. (Coincidence? That's very close to the 
 [safe integer limit on 32-bit floats][f32 safe ints]. Not going to dig out the 
 specification for this one.) It's so astronomically far off from fitting the 
 space for 2^6472 images it's not even worth calculating. I'll likely have to 
