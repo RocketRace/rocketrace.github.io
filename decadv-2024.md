@@ -58,6 +58,27 @@ this month and I am feeling motivated! Even though today I only tweaked some CSS
 (hehe, repeating JPEG backgrounds) I won't say that I accomplished little (that
 would be false).
 
+## Day 2
+
+Who says the updates have to be paragraphs long? Today, I just read about the 
+JavaScript events and methods I could use for dynamically loading a list of
+2^65472 images while maintaining an accurate scrollbar. Fun fact! The
+otherwise-reasonable strategy of "compute a fixed full height for the body
+and populate the page as it becomes visible" is not feasible due to the simple
+fact that the maximum value you can plug into a `height` CSS property is on
+the order of 2^24 pixels. (Coincidence? That's very close to the 
+[safe integer limit on 32-bit floats][f32 safe ints]. Not going to dig out the 
+specification for this one.) It's so astronomically far off from fitting the 
+space for 2^6472 images it's not even worth calculating. I'll likely have to 
+resort to a simulacrum using a reasonably-tall document (so that regular 
+scrolling won't move the bar) and gamedev-esque 
+[Viewing-frustum culling][fancy culling].
+
+I would ideally like to have the whole page on a single infinite scroll, like 
+all the information in this page is just at your (literal) fingertips. If only 
+you could scroll forever and never get fatigued, you could learn all there is 
+to know in this world...
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
@@ -65,3 +86,7 @@ would be false).
 [babel website]: https://libraryofbabel.info
 [88x31 grapher]: https://eightyeightthirty.one/
 [88x31 lister]: https://88x31db.com/
+
+[f32 safe ints]: https://en.wikipedia.org/wiki/Single-precision_floating-point_format#Precision_limitations_on_integer_values
+[fancy culling]: https://en.wikipedia.org/wiki/Hidden-surface_determination#Viewing-frustum_culling
+
