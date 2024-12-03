@@ -1,0 +1,12 @@
+# Example portfolio entry
+- name: breathing-geometry
+  date: 2024-10-01
+  description: |
+    hdjakshfjkasf
+    fadhjkflhsaklf
+    fhajskfhl
+  image: ./assets/images/portfolio/adgfhjakgfjfa
+  links:
+    site: https://olivialta.cc/breathing-geometry
+    github: https://github.com/RocketRace/breathing-geometry
+
