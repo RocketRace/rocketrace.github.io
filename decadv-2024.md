@@ -23,7 +23,7 @@ window. More on that tomorrow :)
 ## Day 1
 
 By the way, these updates will be in chronological order. Even though it's
-better for catching updates it seems easier to read through as a whole this way.
+worse for catching updates it seems easier to read through as a whole.
 
 I've had this idea floating in my head for a little bit now: 
 [the Library of Babel in its modern form][babel website] is still ultimately
@@ -79,6 +79,29 @@ all the information in this page is just at your (literal) fingertips. If only
 you could scroll forever and never get fatigued, you could learn all there is 
 to know in this world...
 
+## Day 3
+
+Slight change of pace! I worked on my portfolio today. Currently, the page is
+certifiably empty. I would like the page to contain a reverse chronological
+list of my highlighted work. Each entry has a visual element if possible, a
+title, date (to the nearest month), description, and outgoing links. While
+individual projects distinguish themselves from the others, the overall
+experience should be a smooth dive back in time.
+
+So, to start I've been formulating lists of what to put there. I have a lot of
+projects stretching back a few years, with various themes and foci. I wonder
+what would be the best way to unify all of them? On one hand it feels crass
+to assign an "artness" metric to a project, on the other it feels odd to put
+conceptual work next to practical work. Maybe a different form of categorizing?
+
+In terms of implementation, I think I will be using Jekyll's 
+[include system][jekyll include] to have a folder of portfolio entries that
+are compiled into a static page. That way I can store both structured (front
+matter YAML) and unstructured (HTML content) information. Though... I could 
+also use [data files][jekyll data files] to make *every* entry structured --
+if my goal is indeed to have an image, description, and other fields. That
+sounds quite reasonable, actually.
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
@@ -90,3 +113,5 @@ to know in this world...
 [f32 safe ints]: https://en.wikipedia.org/wiki/Single-precision_floating-point_format#Precision_limitations_on_integer_values
 [fancy culling]: https://en.wikipedia.org/wiki/Hidden-surface_determination#Viewing-frustum_culling
 
+[jekyll include]: https://jekyllrb.com/docs/includes/
+[jekyll data files]: https://jekyllrb.com/docs/datafiles/
