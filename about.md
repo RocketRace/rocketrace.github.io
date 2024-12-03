@@ -12,6 +12,8 @@ I'm also broadly enthusiastic about mathematics, software, music, and video game
 The background image to this site is randomly generated! It's based on patterns I 
 used to scribble onto graph paper as a teen.
 
+[December adventure 2024][december adventure]
+
 I am in many places on the internet!
 * On Discord, my tag is `rocketrace`.
 * My [esolangs.org][my esolangs] page! I've designed and implemented a number of
@@ -54,3 +56,4 @@ If you like this site, you might enjoy
 [github]: https://github.com/RocketRace
 [code guessing]: https://cg.esolangs.gay
 [my cg]: https://github.com/RocketRace/code-guessing
+[december adventure]: https://olivialta.cc/decadv-2024
