@@ -12,15 +12,14 @@ set [using a different programming language each day][my aoc2023]. But I feel
 like now is the ideal time for me to take it easier and not to fuss about
 completion times or implementating algorithms. I welcome the change of pace.
 
-## Day 0
+## December 0
 
 Today, I set up this page! I will be updating this page every day as my
 adventure log. I have some plans for the projects I'll be working on -- in
 particular I have ideas and a half-baked playground open on a different VSCode
 window. More on that tomorrow :)
 
-
-## Day 1
+## December 1
 
 By the way, these updates will be in chronological order. Even though it's
 worse for catching updates it seems easier to read through as a whole.
@@ -58,7 +57,7 @@ this month and I am feeling motivated! Even though today I only tweaked some CSS
 (hehe, repeating JPEG backgrounds) I won't say that I accomplished little (that
 would be false).
 
-## Day 2
+## December 2
 
 Who says the updates have to be paragraphs long? Today, I just read about the 
 JavaScript events and methods I could use for dynamically loading a list of
@@ -79,7 +78,7 @@ all the information in this page is just at your (literal) fingertips. If only
 you could scroll forever and never get fatigued, you could learn all there is 
 to know in this world...
 
-## Day 3
+## December 3
 
 Slight change of pace! I worked on my portfolio today. Currently, the page is
 certifiably empty. I would like the page to contain a reverse chronological
