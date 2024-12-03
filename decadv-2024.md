@@ -102,6 +102,9 @@ also use [data files][jekyll data files] to make *every* entry structured --
 if my goal is indeed to have an image, description, and other fields. That
 sounds quite reasonable, actually.
 
+I also added some missing links around my site, such as a "home" link in 
+[breathing-geometry][breathing-geometry]. That was a fun use of CSS grid.
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
@@ -115,3 +118,4 @@ sounds quite reasonable, actually.
 
 [jekyll include]: https://jekyllrb.com/docs/includes/
 [jekyll data files]: https://jekyllrb.com/docs/datafiles/
+[breathing-geometry]: https://olivialta.cc/breathing-geometry
