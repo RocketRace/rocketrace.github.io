@@ -104,6 +104,13 @@ sounds quite reasonable, actually.
 I also added some missing links around my site, such as a "home" link in 
 [breathing-geometry][breathing-geometry]. That was a fun use of CSS grid.
 
+## December 4
+
+Hmm, using a real scroll whell as a replacement for a fake scroll wheel seems
+like an awfully fragile solution. And I don't think it'll be particularly
+portable. Perhaps it's best to not try my luck overengineering a small feature
+and instead focus on the necessary elements of the experience.
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
