@@ -111,6 +111,19 @@ like an awfully fragile solution. And I don't think it'll be particularly
 portable. Perhaps it's best to not try my luck overengineering a small feature
 and instead focus on the necessary elements of the experience.
 
+## December 5
+
+Today, as I was exploring dynamically generated 88x31 images, I realized that
+the page should load with the first page of content pregenerated. That sent me
+down a bit of a rabbithole with JS bundlers and static site generators. In the
+end I chose to use Hugo for some of the basic templating. I engulfed myself in
+the documentation until I figured out how to a) compile typescript, b) create
+elements in a loop, and c) pass configuration to typescript in a way that my
+editor didn't complain (the solution was to add a `.d.ts` file and define a
+custom `"paths": ...` configuration in my `.tsconfig`!) But in the end I have
+a clean setup with templating, local hosting, and static generation! I can
+proceed to work more on the actual site code without getting side-tracked.
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
