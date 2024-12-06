@@ -124,6 +124,46 @@ custom `"paths": ...` configuration in my `.tsconfig`!) But in the end I have
 a clean setup with templating, local hosting, and static generation! I can
 proceed to work more on the actual site code without getting side-tracked.
 
+## December 6
+
+So, to make my task a little bit easier to work on, I've published the image
+backend to the site on GitHub and deployed it to Vercel. Yes, unfortunately
+this project is hosted on two different online platform corporations. In an
+ideal world I would be running my own server to host. This site is static, 
+running right now on GitHub pages (but SSGs can easily be interchangeable so 
+long as you generate your static assets ahead of time). However, in order to 
+have permalinks to Babel's seeded-random images, I need some server-side 
+computation. As far as I can tell, using Vercel for free Next.js hosting is a 
+functional solution in the short term. Even if in the free tier is shut down in 
+the future, and I have no doubt it will, there will be enough time to navigate 
+over to my own server by then. I have attempted to minimize the amount of 
+reliance on platform-specific features on my site, such as GitHub's CI 
+workflows, for similar reasons.
+
+That is to say, the Vercel free tier's bandwidth limits have already become a
+problem for my project. If each image displayed on the page is to be fetched 
+from Vercel, and a single image equates to about 12KB of outbound traffic,
+then it takes 8 million images -- aka about 9 hours of scrolling the 
+infinite-scroll website -- to deny service to the page for a whole month.
+Not good. I already managed to use up 50MB of traffic out of 100GB in my few
+minutes of testing. To alleviate this, I have switched to using `<canvas>` 
+elements initialized with JavaScript instead. The page actually loads a lot 
+faster now that it's not waiting on a series of network requests.
+
+The internet is increasingly controlled by a handful of digital giants. It is 
+difficult not to partake in their platforms. I know many of us have a vision 
+for a more open and indie web, building organic networks through interlinked 
+personal sites and encouraging the use of open protocols. So, especially now in 
+times of increasing political tension and threat of monopolistic deregulation 
+in the tech sector, it is crucial for us to have backup plans. Do not rely on 
+the whims of a single platform. Keep backups of your data. Keep alternate means 
+of contact with your friends. Enshittification will come for us all. My own 
+plan is to get personal web hosting running on a VPS, to distribute my Git 
+repositories through alternate means such as the [radicle][radicle] protocol, 
+and to ensure I have access to a backup of my cloud storage even if one service 
+goes down. And perhaps my project could inspire others to contemplate the state 
+of the internet today, and reach their own conclusions on the matter. Thank you.
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
@@ -138,3 +178,5 @@ proceed to work more on the actual site code without getting side-tracked.
 [jekyll include]: https://jekyllrb.com/docs/includes/
 [jekyll data files]: https://jekyllrb.com/docs/datafiles/
 [breathing-geometry]: https://olivialta.cc/breathing-geometry
+
+[radicle]: https://radicle.xyz
