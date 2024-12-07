@@ -183,3 +183,5 @@ I haven't done much today aside from small code tweaks, but I did spot [every-uu
 [breathing-geometry]: https://olivialta.cc/breathing-geometry
 
 [radicle]: https://radicle.xyz
+
+[every-uuid]: https://everyuuid.com/
