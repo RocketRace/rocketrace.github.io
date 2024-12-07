@@ -164,6 +164,9 @@ and to ensure I have access to a backup of my cloud storage even if one service
 goes down. And perhaps my project could inspire others to contemplate the state 
 of the internet today, and reach their own conclusions on the matter. Thank you.
 
+## December 7
+I haven't done much today aside from small code tweaks, but I did spot [every-uuid][every-uuid]. What a funny coincidence that we created such a similar project! More specifically, the projects are similar in their technical details, but quite different in terms of their audience, direction, and (eventual) presentation. I appreciate the contrast. (In fact, there's a lot of good tips in the technical implementation side!) I wouldn't say our projects are ideologically opposed, but the direction that Every UUID goes in is much closer to "viral internet spectacle". I have made projects like that before too, but it's not quite my thing anymore. I'm glad that there is a steady supply of imaginative code out there to make digital life interesting 😄 I was pleasantly surprised to see the rest of the author's portfolio, and I will follow them for more!
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
