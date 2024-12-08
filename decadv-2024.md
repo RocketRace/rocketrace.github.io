@@ -165,7 +165,51 @@ goes down. And perhaps my project could inspire others to contemplate the state
 of the internet today, and reach their own conclusions on the matter. Thank you.
 
 ## December 7
-I haven't done much today aside from small code tweaks, but I did spot [every-uuid][every-uuid]. What a funny coincidence that we created such a similar project! More specifically, the projects are similar in their technical details, but quite different in terms of their audience, direction, and (eventual) presentation. I appreciate the contrast. (In fact, there's a lot of good tips in the technical implementation side!) I wouldn't say our projects are ideologically opposed, but the direction that Every UUID goes in is much closer to "viral internet spectacle". I have made projects like that before too, but it's not quite my thing anymore. I'm glad that there is a steady supply of imaginative code out there to make digital life interesting 😄 I was pleasantly surprised to see the rest of the author's portfolio, and I will follow them for more!
+I haven't done much today aside from small code tweaks, but I did spot 
+[every-uuid][every-uuid]. What a funny coincidence that we created such a 
+similar project! More specifically, the projects are similar in their technical 
+details, but quite different in terms of their audience, direction, and 
+(eventual) presentation. I appreciate the contrast. (In fact, there's a lot of 
+good tips in the technical implementation side!) I wouldn't say our projects 
+are ideologically opposed, but the direction that Every UUID goes in is much 
+closer to "viral internet spectacle". I have made projects like that before 
+too, but it's not quite my thing anymore. I'm glad that there is a steady 
+supply of imaginative code out there to make digital life interesting 😄 I was 
+pleasantly surprised to see the rest of the author's portfolio, and I will 
+follow them for more!
+
+## December 8
+I have implemented a simple reversible LCG to handle my seeded randomization.
+I have taken inspiration from the [algorithm to the Library of Babel][lob algo]
+as well as the [blogpost to every-uuid][every-uuid blog], hence LCG.
+This was pretty straightforward and I was confident in my ability (it helps
+that I am not trying to solve the task using an LLM). The goal here was to
+implement a permutation of numbers $n \in [0, N)$ (with period N). Because 
+LCGs are commonly used iteratively for PRNG purposes, it might be easy to 
+implement that permutations as $x_i \mapsto \text{LCG}(x_{i-1})$. But that would
+be a folly; since LCG with properly chosen parameters is *already* the 
+permutation that we're looking for! So $x_i \mapsto \text{LCG}(i)$ is all it
+takes. The author of every-uuid missed this trick and used a different 
+algorithm in the end, whereas the Library of Babel intentionally adds extra
+bitwise tricks to make the output look more random. It turns out that for
+image content a simple LCG suffices and looks random enough! Even the
+repetitiveness of lower-order bits is less significant when you realize that
+even a single pixel is 24 bits and hence repeats with a period of $\le 2^24$.
+When combined with the layout of the 88x31s this will be practically invisible.
+I did notice a small issue with my implementation, which was performance; it
+takes 150ms to parse the bigint literals from my code (that I selected randomly)
+and rendering to 256 canvases is pretty slow at 2 seconds total. I can always 
+optimize this, but it's a good starting point to compare to.
+
+Wow I'm exhausted today... I should take a bit easier tomorrow. I sometimes get
+sucked into working on a project for far too long, and I forget to do other
+things in the meantime (such as drink my tea which is currently becoming cold).
+It's a difficult balance to strike, enjoying myself while working on a thing and
+also taking care of myself. I don't always balance myself very well. I think the
+fact that this log is public is also pushing me towards working more, which is
+counterintuitive... (The point of the adventure log is to journal, not to show
+off!) In any case I do want to learn from this December Adventure, so good night
+
 
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
@@ -185,3 +229,6 @@ I haven't done much today aside from small code tweaks, but I did spot [every-uu
 [radicle]: https://radicle.xyz
 
 [every-uuid]: https://everyuuid.com/
+
+[lob algo]: https://github.com/librarianofbabel/libraryofbabel.info-algo
+[every-uuid blog]: https://eieio.games/blog/writing-down-every-uuid/
