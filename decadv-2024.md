@@ -210,6 +210,33 @@ fact that this log is public is also pushing me towards working more, which is
 counterintuitive... (The point of the adventure log is to journal, not to show
 off!) In any case I do want to learn from this December Adventure, so good night
 
+## December 9
+Fixed some broken CSS in yesterday's log 😁 I also decided to look into the
+performance issues with my code. The first thing I did was to replace two of
+the bigint literals (the parameters to the LCG) with computed literals
+satisfying the necessary properties and that made sufficiently random images.
+This brought the parsing time down from 150ms to an acceptable 50ms, but that 
+wasn't necessarily the biggest priority here... I was actually able to speed
+up the rest of the code by a factor of 10 by replacing BigInt operations with
+string operations:
+```diff
++ // I'm using a hex string as a u8 buffer
++ let hex = bits.toString(16);
+---
+- const rgb = Number(BigInt.asUintN(24, bits));
+- bits >>= 24n;
+- data.data[i * 4] = rgb >> 16;
+- data.data[i * 4 + 1] = (rgb >> 8) & 0xff;
+- data.data[i * 4 + 2] = rgb & 0xff;
++ data.data[i * 4] = parseInt(hex.substring(i * 6, i * 6 + 2), 16);
++ data.data[i * 4 + 1] = parseInt(hex.substring(i * 6 + 2, i * 6 + 4), 16);
++ data.data[i * 4 + 2] = parseInt(hex.substring(i * 6 + 4, i * 6 + 6), 16);
+```
+It's cursed but the numbers don't lie. I was honestly surprised at how well it
+worked, which probably goes to show how weak JavaScript's bigints are. (Or it
+shows me that browsers can't always optimize your code away, and that creating
+tons of GC pressure in a loop is a bad idea, or that sometimes the simplest
+solution is the best. Pick your favorite really)
 
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
