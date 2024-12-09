@@ -224,7 +224,7 @@ off!) In any case I do want to learn from this December Adventure, so good night
 
 [jekyll include]: https://jekyllrb.com/docs/includes/
 [jekyll data files]: https://jekyllrb.com/docs/datafiles/
-[breathing-geometry]: {{ "/breathing-geometry" | absolute_url }}
+[breathing-geometry]: {{ "/breathing-geometry" | relative_url }}
 
 [radicle]: https://radicle.xyz
 
