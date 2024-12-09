@@ -56,4 +56,4 @@ If you like this site, you might enjoy
 [github]: https://github.com/RocketRace
 [code guessing]: https://cg.esolangs.gay
 [my cg]: https://github.com/RocketRace/code-guessing
-[december adventure]: https://olivialta.cc/decadv-2024
+[december adventure]: {{ "/decadv-2024" | relative_url }}
