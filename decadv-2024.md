@@ -238,6 +238,13 @@ shows me that browsers can't always optimize your code away, and that creating
 tons of GC pressure in a loop is a bad idea, or that sometimes the simplest
 solution is the best. Pick your favorite really)
 
+## December 10
+Today, I implemented dynamic loading based on scroll position, as well as some
+extra methods to jump to a page. I have a few functions that aren't hooked up
+to anything yet; I'd like to get a persistent footer for navigation + reverse 
+image search + scroll to top implemented tomorrow. Plus a fake scrollbar would
+be nice. Pretty simple mindless code for now.
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
