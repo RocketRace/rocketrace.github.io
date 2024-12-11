@@ -245,6 +245,14 @@ to anything yet; I'd like to get a persistent footer for navigation + reverse
 image search + scroll to top implemented tomorrow. Plus a fake scrollbar would
 be nice. Pretty simple mindless code for now.
 
+## December 11
+I implemented a sticky footer and the functionality I mentioned yesterday.
+There's still stuff to finish, it's not looking particularly pretty and the
+scroll position doesn't have fidelity. I am happy chugging along with this :)
+I'm also pondering on the philosophical implications of this project, as well
+as the message that it'll communicate. Who is my intended audience? Certainly
+not the general online programming population.
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
