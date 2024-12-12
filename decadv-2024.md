@@ -253,6 +253,16 @@ I'm also pondering on the philosophical implications of this project, as well
 as the message that it'll communicate. Who is my intended audience? Certainly
 not the general online programming population.
 
+## December 12
+A whole lot of chunky progress! Styling, structuring... and TONS of performance
+improvements. Primarily minimizing the number of bigint operations that I have 
+to do. One thing that makes a huge difference is avoiding converting bigints to 
+decimal strings, especially when scrolling at very large positions. Hexadecimal 
+serialization is fine, because it only takes a linear scan through the bigint's 
+internal 64-bit (?) digits. However, printing in base 10 requires repeatedly 
+dividing the bigint by a power of 10, which can be costly. Firefox performance 
+devtools have been very helpful for me!
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
