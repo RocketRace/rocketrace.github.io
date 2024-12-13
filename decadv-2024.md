@@ -263,6 +263,21 @@ internal 64-bit (?) digits. However, printing in base 10 requires repeatedly
 dividing the bigint by a power of 10, which can be costly. Firefox performance 
 devtools have been very helpful for me!
 
+## December 13
+Happy halloween!
+
+It's been a busy few days so I've ended up doing all my code late at night.
+I have still been compelled to write my entry daily. Today has been a lot of
+progress. In terms of performance there's no noticeable jank anymore. I'm also
+making leaps in functionality, switching from rendering in units of pages to
+rows. Plus my silly hack that loops `.getBoundingClientRect()` inside the
+`IntersectionObserver` callback is pretty cute. (I am using it to fill the
+page until a loading indicator is no longer visible on screen.) Just need to
+update the row width dynamically in JS, plus implement upwards scrolling now.
+Ruminating on the essay, ought to get writing that too soon. I'm pretty happy
+with how the page is shaped. I wonder what kind of repeating gif would fit
+best in the background... Picking colors and fonts will be a joy.
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
