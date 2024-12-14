@@ -278,6 +278,9 @@ Ruminating on the essay, ought to get writing that too soon. I'm pretty happy
 with how the page is shaped. I wonder what kind of repeating gif would fit
 best in the background... Picking colors and fonts will be a joy.
 
+## December 14
+No code today. I'm exhausted.
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
