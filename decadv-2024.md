@@ -281,6 +281,24 @@ best in the background... Picking colors and fonts will be a joy.
 ## December 14
 No code today. I'm exhausted.
 
+## December 15
+I got smooth row-based scrolling working pretty well! It took a bit of trickery
+but my current solution keeps up with a decent pace of scrolling and dynamically
+keeps the page filling up regardless of scroll. The only thing is that I need
+to implement the same thing scrolling upwards too, rather than just downwards.
+
+I also finished the search-by-image functionality! My girlfriend served as my
+rubber duck for a lot of this, because it turned out I had a lot of bugs in my
+LCG algorithm (or rather my choice of parameters -- some of them were negative
+and the precomputed modular inverse was just straight up wrong). As I explained
+process for efficiently converting a `Uint8ClampedArray` to a `BigInt` I
+realized that it was faulty (I forgot to pad my hex strings to length 2).
+
+To celebrate this milestone, I'm showing one (1) screenshot :) Don't mind the 
+placeholder assets and styling.
+
+![screenshot of page containing pixel soup and one coherent banner]({{ "/assets/images/babel-wip-decadv.png" | relative_url }})
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
