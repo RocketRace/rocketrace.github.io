@@ -297,7 +297,75 @@ realized that it was faulty (I forgot to pad my hex strings to length 2).
 To celebrate this milestone, I'm showing one (1) screenshot :) Don't mind the 
 placeholder assets and styling.
 
-![screenshot of page containing pixel soup and one coherent banner]({{ "/assets/images/babel-wip-decadv.png" | relative_url }})
+![screenshot of page containing pixel soup and one coherent banner][ss 1]
+
+## December 16
+The finitude of the Library of Babel is subtle in its original formulation.
+By virtue of being *inside* the library, forced to take on the perspective of
+an ant, your perception of the library grows. A single human lifespan is
+quite strictly bounded, and the library is placed within the physical realm.
+Thus, the library creates a *tangible* representation of unreachableness. For
+all practical purposes it is infinite.
+
+But the library is, at least as described, only able to contain a finite number
+of unique books. The precise size of the alphabet varies between 20 and 30 per
+interpretation and adaptation, but stays finite. A page must in turn also
+contain only finitely many characters (around 3000 is sensible). Finally, a
+book can only have finitely many pages (400?). Putting all this together, we
+find that there are $(\text{alphabet size}^\text{chars/page})^\text{pages/book}$
+unique permutations of letters (i.e. books) -- a far cry from infinity!
+
+(As a side note, the web version of the library only contains every unique
+*page* of 3200 characters rather than every n-page book of such pages. I
+assume this is for technical reasons, but this does mean that it only contains
+29^3200 unique pages of text... which is less than the number of banners on
+my page. In fact, a banner can store the same amount of information as about 4
+pages of text! An image indeed says more than a thousand words.)
+
+The tension between the finite and infinite comes from how we are able to
+interface with the library. As a lone wanderer inside a megastructure, one's
+only option is to traverse the hallways. The books one is able to read, or even
+to reach, are but a drop in an ocean compared to the vastness of the whole
+library, finite or not. One's search for hidden knowledge is doomed from the
+start, for the likelihood of finding any coherent text is infinitesimal --
+much less text that communicates information beside entropy.
+
+In the online version of the library, we are given additional means of 
+interacting with the library. We can locate a book by its position in the
+library, eschewing the need for physical traversal. We can also jump directly
+to a random position in the library, as if whisked away by reality. Finally,
+we are able to search for the precise location of specific sequences of
+characters, effectively allowing us to recall books we know to exist in the
+library.
+
+Notably, these extra methods do not allow us to gain any more knowledge from
+the digital library that the physical library didn't offer. While we are able
+to find more instances of coherent text (simply by searching for it), we are
+not able to find any information that was not provided by us in the first
+place. Jumping to a random or specific coordinates is no good, either -- since
+there's no pattern to the contents of a book at a coordinate, every turned page
+is equally likely to contain a prayer. Thus, the theoretical inaccessibility 
+of the library is maintained.
+
+However, these additional capabilities introduce tension between the apparent
+infinitude and the theoretical finitude of the library. We are no longer acting
+from *within* the library, but rather *outside* it. The physical metaphor of
+the library begins to break apart as soon as we are able to transcent physical
+barriers and jump to arbitrary points within. The library becomes a thing
+to be interacted with, rather than an environment to traverse. The medium of
+a webpage promotes the former kind of interaction. Nevertheless, it does not
+necessarily imply bounds on the library as a *thing*. We only see a snapshot
+of the library at any given point in time and thus are not privy to the size,
+outside of calculations like those above.
+
+So what if this tension was then taken further? What if it was faster and
+simpler to traverse the library? What if the finitude of the library was
+displayed to you at every step? What if you were presented with an abstraction
+of the *whole* library in a single thing? I am interested in exploring how
+far this tension can go before something snaps. I hope that this can push
+those borders further, through the single continuous scrollable page, the
+speed at which you can zoom through images, the *progress bar* in the footer,
+and the general presentation of the site.
 
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
@@ -320,3 +388,5 @@ placeholder assets and styling.
 
 [lob algo]: https://github.com/librarianofbabel/libraryofbabel.info-algo
 [every-uuid blog]: https://eieio.games/blog/writing-down-every-uuid/
+
+[ss 1]: {{ "/assets/images/babel-wip-decadv.png" | relative_url }}
