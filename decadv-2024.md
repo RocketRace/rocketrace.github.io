@@ -367,6 +367,32 @@ those borders further, through the single continuous scrollable page, the
 speed at which you can zoom through images, the *progress bar* in the footer,
 and the general presentation of the site.
 
+## December 17
+I got sucked into writing a lot of code today! I first implemented upward
+scrolling, then responsively updating row widths, then pushed all the slow
+screen-freezing number crunching into a web worker. Well, it turns out, all
+the screen-freezing number crunching is unnecessary after all, since a feature
+of the PRNG used (LCG) is that successive elements are a constant distance
+apart modulo $m$. So I turned a few seconds of freezing into a crisp ~200ms.
+Still enough of a freeze that it's good to compute in a worker thread, but
+not nearly as catastrophic as before.
+
+In fact, it's so easy it makes me question whether I want to use an LCG here
+in the first place. Surely it is too predictable? Perhaps this is what the
+creator of every-uuid was thinking of when they wanted to use the LCG function
+recursively. However, for my design decisions this fits well: it makes the
+overall experience of scrolling faster and thus shrinks the perceived size
+of the library as a bounded *thing*.
+
+The irony of this smallness, of course, is that it's only an illusion.
+While there is a helpful progress bar telling you the percentage of the
+library that you've visited, if you start scrolling from the top of the page
+it will never tick past 0.000000%. Only by jumping ahead is it ever possible
+to traverse other locations on the page. But the promise of the number is 
+tantalizing; I've scrolled so far, surely I am close to passing a measly
+millionth of a percent? (Hint: each millionth of a percent contains
+${2^{65472} \over 2^{24}} = 2^{65448}$ banners...)
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
