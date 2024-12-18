@@ -393,6 +393,10 @@ tantalizing; I've scrolled so far, surely I am close to passing a measly
 millionth of a percent? (Hint: each millionth of a percent contains
 ${2^{65472} \over 2^{24}} = 2^{65448}$ banners...)
 
+## December 18
+Pixel art and web colors today! This calls for a new screenshot!
+![screenshot of updated page with lots of green and new art][ss 2]
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
@@ -415,4 +419,5 @@ ${2^{65472} \over 2^{24}} = 2^{65448}$ banners...)
 [lob algo]: https://github.com/librarianofbabel/libraryofbabel.info-algo
 [every-uuid blog]: https://eieio.games/blog/writing-down-every-uuid/
 
-[ss 1]: {{ "/assets/images/babel-wip-decadv.png" | relative_url }}
+[ss 1]: {{ "/assets/images/decadv-wip-page.png" | relative_url }}
+[ss 2]: {{ "/assets/images/decadv-styled-green.png" | relative_url }}
