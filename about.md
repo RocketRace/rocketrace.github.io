@@ -36,6 +36,7 @@ If you like this site, you might enjoy
   * [zptr.cc](https://zptr.cc/)
   * [balt.sno.mba](https://balt.sno.mba/)
   * [xxiivv.com](https://xxiivv.com/)
+  * [jennyodell.com](https://www.jennyodell.com/)
 
 <script defer>
   // a tiny feature, but I prefer it like this
