@@ -37,6 +37,7 @@ If you like this site, you might enjoy
   * [balt.sno.mba](https://balt.sno.mba/)
   * [xxiivv.com](https://xxiivv.com/)
   * [jennyodell.com](https://www.jennyodell.com/)
+  * [tom7.org](http://tom7.org/)
 
 <script defer>
   // a tiny feature, but I prefer it like this
