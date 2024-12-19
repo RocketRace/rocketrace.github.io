@@ -397,6 +397,38 @@ ${2^{65472} \over 2^{24}} = 2^{65448}$ banners...)
 Pixel art and web colors today! This calls for a new screenshot!
 ![screenshot of updated page with lots of green and new art][ss 2]
 
+## December 19
+The overall experience is really coming together beautifully. The navbar
+at the bottom looks adorably antequated, the colors are smooth and gentle,
+and the favicon makes me feel strong emotions when I look at it.
+
+![The updated page, again, with some stylistic tweaks][ss 3]
+
+Something about the icon triggers an emotional response in me. It's serene
+and natural, but full of detail and shine. Even though it's just a 16x16 crop
+of the background image I drew up yesterday, it feels very powerful. Listening 
+to this feeling I had a revelation about what this project was about -- in
+thematic and aesthetic terms, it is like a forest or a starscape. Despite
+apparent chaos, it is in the order that is most natural within its own rules.
+It's not beholden to the whims of humans, and we will never be able to fit
+every detail of a forest in our minds. We are always casting a flashlight --
+or radio telescope -- on a very narrow slice of the world that exists,
+independent of our understanding of said world. Ironically, it is *not* a 
+digital garden.
+
+How can I reconcile this theme with the idea of putting bounds on the forest?
+It feels like the infinite forest is quite overpowering against attempts to
+confine and bound it. There's almost a thematic dissonance in the progress bar.
+Perhaps the dissonance is part of the point? The navbar is distinctly separate
+from the rest of the forest. I could highlight that with a border, or perhaps
+a slight shift in colors. In that way, the page encompasses both the forest
+itself, and our attempts to wrangle with it.
+
+It's strange sometimes, how art seems to *reveal* itself to you rather than
+you creating it. Like the art was there all along and I was merely traversing
+towards it without realizing. It feels immensely satisfying to have these
+moments of revelation, though. Divine even.
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
@@ -419,5 +451,8 @@ Pixel art and web colors today! This calls for a new screenshot!
 [lob algo]: https://github.com/librarianofbabel/libraryofbabel.info-algo
 [every-uuid blog]: https://eieio.games/blog/writing-down-every-uuid/
 
-[ss 1]: {{ "/assets/images/decadv-wip-page.png" | relative_url }}
-[ss 2]: {{ "/assets/images/decadv-styled-green.png" | relative_url }}
+[ss 1]: {{ "/assets/images/decadv/wip.png" | relative_url }}
+
+[ss 2]: {{ "/assets/images/decadv/green.png" | relative_url }}
+
+[ss 3]: {{ "/assets/images/decadv/more.png" | relative_url }}
