@@ -429,6 +429,13 @@ you creating it. Like the art was there all along and I was merely traversing
 towards it without realizing. It feels immensely satisfying to have these
 moments of revelation, though. Divine even.
 
+*Update:* I went ahead and added the border. I decided to also add a button
+to take a walk in the forest, which hides the navbar from view and
+automatically scrolling the page down at a leisurely pace. That's my attempt at
+reconciling the two different directions on the page -- which in effect is my
+"solution" to the tension at the core of it. I guess I can't help but to imprint
+my own interpretation on the work.
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
