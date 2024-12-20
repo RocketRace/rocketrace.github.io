@@ -436,6 +436,12 @@ reconciling the two different directions on the page -- which in effect is my
 "solution" to the tension at the core of it. I guess I can't help but to imprint
 my own interpretation on the work.
 
+## December 20
+Finally decided on a name: Babel's Digital Forest (with plenty of sparkling
+unicode characters thrown in). With a name, I can now upload the wip
+[to github][project gh]. It's live on [my website][project site], although it
+isn't linked anywhere yet.
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
@@ -463,3 +469,6 @@ my own interpretation on the work.
 [ss 2]: {{ "/assets/images/decadv/green.png" | relative_url }}
 
 [ss 3]: {{ "/assets/images/decadv/more.png" | relative_url }}
+
+[project gh]: https://github.com/RocketRace/babels-digital-forest
+[project site]: https://olivialta.cc/babels-digital-forest
