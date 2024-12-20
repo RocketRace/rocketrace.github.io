@@ -15,6 +15,7 @@ used to scribble onto graph paper as a teen.
 [December adventure 2024][december adventure]
 
 I am in many places on the internet!
+* You can send mail to <span id="mailer">[hi at this domain]</span>
 * On Discord, my tag is `rocketrace`.
 * My [esolangs.org][my esolangs] page! I've designed and implemented a number of
   [esoteric programming languages][esolangs] that demonstrate beautiful and unexpected
@@ -51,6 +52,9 @@ If you like this site, you might enjoy
   }
   links.forEach(link => list.appendChild(link));
   marker.innerText = "In fact, it's randomized!";
+
+  const mailer = document.getElementById("mailer");
+  mailer.innerText = "[hi@" + "olivialta.cc]";
 </script>
 
 [my esolangs]: https://esolangs.org/wiki/User:RocketRace
