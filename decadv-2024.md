@@ -442,6 +442,9 @@ unicode characters thrown in). With a name, I can now upload the wip
 [to github][project gh]. It's live on [my website][project site], although it
 isn't linked anywhere yet.
 
+## December 21
+Winding things down for the holiday days. I'll be chipping away at my essay in the meantime.
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
