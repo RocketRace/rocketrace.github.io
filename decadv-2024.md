@@ -443,7 +443,8 @@ unicode characters thrown in). With a name, I can now upload the wip
 isn't linked anywhere yet.
 
 ## December 21
-Winding things down for the holiday days. I'll be chipping away at my essay in the meantime.
+Winding things down for the holiday days. I'll be chipping away at my essay 
+in the meantime.
 
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
