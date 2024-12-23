@@ -451,6 +451,9 @@ I added responsive scaling so the page looks clean on mobile devices, too.
 The header of the site is now looking in character. The essay is progressing,
 I have a document with notes jotted down in it.
 
+## December 23-25
+Merry christmas!
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
