@@ -488,4 +488,4 @@ added final tweaks to the page.
 [ss 3]: {{ "/assets/images/decadv/more.png" | relative_url }}
 
 [project gh]: https://github.com/RocketRace/babels-digital-forest
-[project site]: https://olivialta.cc/babels-digital-forest
+[project site]: {{ "/babels-digital-forest" | relative_url }}
