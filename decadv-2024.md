@@ -454,6 +454,11 @@ I have a document with notes jotted down in it.
 ## December 23-25
 Merry christmas!
 
+## December 26
+It is done! I have finished the essay (well, enough to put it out there) and
+added final tweaks to the page.
+[*Babel's Digital Forest* is now ready!][project site]
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
