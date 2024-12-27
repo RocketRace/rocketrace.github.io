@@ -459,6 +459,11 @@ It is done! I have finished the essay (well, enough to put it out there) and
 added final tweaks to the page.
 [*Babel's Digital Forest* is now ready!][project site]
 
+## December 27
+Chilling out, worked on my discord bot a bit. Halfway through implementing a
+`+tempemoji` command that adds and deletes emoji upon request, for a friend
+group to use.
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
