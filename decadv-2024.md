@@ -465,7 +465,7 @@ Chilling out, worked on my discord bot a bit. Halfway through implementing a
 group to use.
 
 ## December 28
-And done! Chilling out :)
+And done! Chilling out now :)
 
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
