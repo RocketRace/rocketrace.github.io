@@ -464,6 +464,9 @@ Chilling out, worked on my discord bot a bit. Halfway through implementing a
 `+tempemoji` command that adds and deletes emoji upon request, for a friend
 group to use.
 
+## December 28
+And done! Chilling out :)
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
