@@ -467,6 +467,9 @@ group to use.
 ## December 28
 And done! Chilling out now :)
 
+## December 29
+Basking in the satisfaction of a job well done! And adding pronouns to emoji.
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
