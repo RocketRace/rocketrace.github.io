@@ -533,6 +533,7 @@ Cycle ← {fr←⊑(∊𝕩)⊐0 ⋄ (fr⊏⊐𝕩)↓fr↑𝕩}
 Visualize ← >{𝕨↑/⁼⋈𝕩}¨
 Trim ← {1+⌈´𝕩}⊸Visualize ⊢-⌊´
 Zoom ← {Double ← {((≠𝕩)⥊2)/𝕩} ⋄ Double˘Double 𝕩}
+# inefficient but it works :)
 Classify ← {
   horizon ← 𝕩≡⌽𝕩
   _offset ← {∨´(↕≠𝕩)(𝔽≡⊢)∘⌽¨<𝕩}
