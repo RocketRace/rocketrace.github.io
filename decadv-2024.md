@@ -470,6 +470,115 @@ And done! Chilling out now :)
 ## December 29
 Basking in the satisfaction of a job well done! And adding pronouns to emoji.
 
+## December 30
+Have you ever noticed how the last digit in power of 2 in base 10 repeats in
+a symmetric pattern? `2 -> 4 -> 8 -> 6 -> 2 -> ...`
+```
+    8       8  
+     \       \ 
+      6       6
+                   ...
+  4      4
+ /      / 
+2      2  
+```
+Well, I thought to investigate that symmetry, and in particular to see what
+sorts of [Frieze patterns][frieze] can show up when varying either the power
+or the base.
+
+I wrote up some BQN code to test this, since it seems like the sort of problem
+that fits well in array thinking.
+
+I initially found that many cycles are finitely offset, e.g. in base 4, powers
+of 2 have the following pattern: `2 -> 0 -> 0 -> ...`
+
+I computed the cycle for each value, and visualized it as a matrix like below:
+```
+0010000000 # i.e. 2
+0000100000 # i.e. 4
+0000000010 # i.e. 8
+0000001000 # i.e. 6
+```
+I trimmed the matrices to ignore columns of zeros, then computed the four kinds
+of symmetries possible in each image:
+1. Reflections across the direction of travel (i.e. bilateral symmetry in the
+   cycle)
+2. Reflections perpendicular to the direction of travel (like an infinity
+   mirror)
+3. 180 degree rotations around some center point
+4. [Glide reflections][glide reflection]
+
+It turns out that only five of the seven Frieze groups can show up in this
+scenario, which I'm sure can be proven with a bit of elementary number theory.
+
+1. pq1: No special symmetries, only translation. Example: 
+   `3 -> 2 -> 6 -> 4 -> 5 -> 1 -> 3` (powers of 3 in base 7)
+2. p2mm: All kinds of symmetry, but in a boring way. Example: `1 -> 1` (powers
+   of 1 in any base)
+3. p2mg: All kinds of symmetry except bilateral symmetry. This one's also
+   slightly underwhelming, since all the examples just alternate between 2
+   value., Example: `2 -> 1 -> 2` (powers of 2 in base 3)
+4. p2: Translations and rotations. These end up pretty neat. Example:
+   `4 -> 2 -> 1 -> 4` (powers of 4 in base 9)
+5. p11g: Translations and glide reflections. Pretty cute as well. Example:
+   `2 -> 4 -> 8 -> 6` (powers of 2 in base 10, duh)
+
+I marked #1 with spaces, #2 with dots, #3 with M, #4 with R and #4 in G
+in the diagram below.
+
+Here's the final code to generate these insights, as well as the diagram.
+```bqn
+Powers ← {(𝕨|𝕩×⊢)⍟(1+↕𝕨) 1}
+Cycle ← {fr←⊑(∊𝕩)⊐0 ⋄ (fr⊏⊐𝕩)↓fr↑𝕩}
+Visualize ← >{𝕨↑/⁼⋈𝕩}¨
+Trim ← {1+⌈´𝕩}⊸Visualize ⊢-⌊´
+Zoom ← {Double ← {((≠𝕩)⥊2)/𝕩} ⋄ Double˘Double 𝕩}
+Classify ← {
+  horizon ← 𝕩≡⌽𝕩
+  _offset ← {∨´(↕≠𝕩)(𝔽≡⊢)∘⌽¨<𝕩}
+  mirror ← ⌽_offset 𝕩
+  rotation ← (⌽˘⌽)_offset 𝕩
+  glide ← {⌽˘((≠𝕩)÷2)⌽𝕩}_offset 𝕩
+  ⟨horizon,mirror,rotation,glide⟩
+}
+Format ← {
+  0‿0‿0‿0: ' ';
+  1‿1‿1‿1: '.';
+  0‿1‿1‿1: 'M';
+  0‿0‿1‿0: 'R';
+  0‿0‿0‿1: 'G'
+}
+Diagram ← {b𝕊n: Format Classify Zoom Trim Cycle b Powers n}
+
+# b ≥ 2 obvs
+(2+↕18) Diagram⌜ ↕30
+```
+
+Horizontal direction is the number being multiplied, vertical direction 
+(downward) is the base this is computed in.
+```
+┌─                                
+╵"..............................  
+  ..M..M..M..M..M..M..M..M..M..M  
+  ...M...M...M...M...M...M...M..  
+  ..GGM..GGM..GGM..GGM..GGM..GGM  
+  ..M..M..M..M..M..M..M..M..M..M  
+  .. G GM.. G GM.. G GM.. G GM..  
+  ...M.M.M...M.M.M...M.M.M...M.M  
+  ..G.RG.RM..G.RG.RM..G.RG.RM..G  
+  ..GGM..GGM..GGM..GGM..GGM..GGM  
+  ..G   GGG M..G   GGG M..G   GG  
+  ..MM.M.MM..M..MM.M.MM..M..MM.M  
+  ..G GGGGG GGM..G GGGGG GGM..G   
+  .. G GM.. G GM.. G GM.. G GM..  
+  .. GMM.  M.MG M.. GMM.  M.MG M  
+  ...R.R.M.M.R.R.M...R.R.M.M.R.R  
+  ..GGGGGGGGGGGGGGM..GGGGGGGGGGG  
+  ..G.RG.RM..G.RG.RM..G.RG.RM..G  
+  ..GG    G G GGGG  M..GG    G G" 
+                                 ┘
+```
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
@@ -500,3 +609,6 @@ Basking in the satisfaction of a job well done! And adding pronouns to emoji.
 
 [project gh]: https://github.com/RocketRace/babels-digital-forest
 [project site]: {{ "/babels-digital-forest" | relative_url }}
+
+[frieze]: https://en.wikipedia.org/wiki/Frieze_group
+[glide reflection]: https://en.wikipedia.org/wiki/Glide_reflection
