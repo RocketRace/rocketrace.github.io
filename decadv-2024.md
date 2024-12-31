@@ -580,6 +580,9 @@ Horizontal direction is the number being multiplied, vertical direction
                                  ┘
 ```
 
+## December 31
+And that's December! Happy new year :)
+
 [decadv]: https://eli.li/december-adventure
 [aoc]: https://adventofcode.com/
 [my aoc2023]: https://github.com/RocketRace/aoc2023
