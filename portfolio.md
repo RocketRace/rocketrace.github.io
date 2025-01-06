@@ -1,4 +1,5 @@
 ---
 permalink: /portfolio
 ---
-*Under construction*
+portfolio under construction! I hope to add a list here
+:)

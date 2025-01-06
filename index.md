@@ -2,4 +2,4 @@
 layout: default
 ---
 
-homepage coming soon!
+I'm working on a new home page for this website!
