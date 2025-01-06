@@ -9,8 +9,8 @@ I study human-computer interactions and have a particular interest in
 programming language design -- I have designed a number of languages myself! 
 I'm also broadly enthusiastic about mathematics, software, music, and video games.
 
-The background image to this site is randomly generated! It's based on patterns I 
-used to scribble onto graph paper as a teen.
+The background image to this site is randomly generated! It's based on patterns I
+often scribble down, forming these kinds of knight's-move cuboids on graph paper.
 
 [December adventure 2024][december adventure]
 
