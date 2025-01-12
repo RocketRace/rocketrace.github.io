@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>///</title>
+<script>
+let t=undefined
+async function f() {
+    let e=document.getElementById("e")
+    let d=document.getElementById("d")
+    let o=document.getElementById("o")
+    let prog=[...e.innerText]
+    // 0 out 1 pat 2 rep
+    while(prog.length) {
+        let arr=["","",""]
+        for (let s=0;s<3;s++) {
+            while(prog.length) {
+                let c=prog.shift()
+                if(c=="/") {
+                    break
+                } else if(c=="\\") {
+                    arr[s]+=prog.shift()
+                } else {
+                    arr[s]+=c
+                }
+            }
+        }
+        prog=prog.join("")
+        while(prog) {
+            let sub=prog.replace(arr[1],arr[2])
+            if(prog==sub){
+                break
+            }
+            prog=sub
+        }
+        prog=[...prog]
+        e.innerText=prog
+        if(arr[0]) {
+            o.innerText=arr[0]
+        }
+        await new Promise((resolve, reject) => t=setTimeout(resolve, d.value))
+    }
+}
+function h() {
+    clearTimeout(t)
+}
+</script>
+<style>
+pre {
+    display: block;
+    resize: both;
+    border: solid 1px lightgray;
+    padding: 20px 10px;
+    overflow: scroll;
+}
+</style>
+</head>
+<body>
+<button type=button onclick="f()">run</button> frame delay:<input type=number id="d" value="30"> <button type=button onclick="h()">stop</button>
+<br>
+<pre id="e" contenteditable style="border: solid 1px lightgray; padding: 20px 10px; overflow: scroll;">/]
+/]//] /]//][//]
+[/|/<-\\\\>\\\\\\/]
+[/QT/]
+    [|/R|N|/Q|T|/|/<-|\|\>|/<-|\|\|\|\>|\|\|\|\|/|/<|\->|/|/]
+    [C|T|/C|\T|/C|T|/|/*|\
+]   [|/I|\N|/|/I|\N|/**|\
+]   [|/]
+    [|/Q|\T|/Q|T|/R|N]
+[/]
+[/RN/QT//<-\\>/<-\\\\>\\\\//<\->//]
+[/CT/*
+/]
+[/Q\T/QT/RN</pre>
+<pre id="o"></pre>
+</body>
+</html>
