@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: paper
 title: About
 permalink: /about
 ---

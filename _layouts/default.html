@@ -14,14 +14,6 @@
     {%- endif -%}
     {% seo title=false %}
     {%- feed_meta -%}
-    <script src="{{ "/assets/scripts/canvas.js" | relative_url }}"></script>
-    <script>
-      COLORS = {
-        {% for color in site.data.colors %}
-        "{{ color.name }}": "{{ color.hex }}",
-        {% endfor %}
-      }
-    </script>
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
         tex2jax: {
@@ -32,28 +24,5 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> 
   </head>
-  <body>
-    <canvas id="canvas">
-      <!-- prerendered tiling image for nojs clients -->
-    </canvas>
-    <main>
-      <nav>
-        <h1 class="nav-title">
-          <a class="title-link" href="{{ "/" | relative_url }}">
-            {{ site.title | escape }}
-          </a>
-        </h1>
-        <div class="nav-links">
-          <a class="nav-link" href="{{ "/" | relative_url }}">home</a>
-          <a class="nav-link" href="{{ "/blog" | relative_url }}">blog</a>
-          <a class="nav-link" href="{{ "/about" | relative_url }}">about</a>
-          <a class="nav-link" href="{{ "/portfolio" | relative_url }}">portfolio</a>
-          <a class="nav-link" href="{{ "/breathing-geometry" | relative_url }}">breathe</a>
-          <a class="nav-link" href="{{ "/babels-digital-forest" | relative_url }}">88x31</a>
-        </div>
-      </nav>
-      <hr />
-      {{ content }}
-    </main>
-  </body>
+  {{ content }}
 </html>
