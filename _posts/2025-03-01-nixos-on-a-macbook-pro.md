@@ -2,7 +2,6 @@
 layout: post
 title: The journey to NixOS on a MacBook Pro (11,1 aka late 2013)
 slug: nixos-on-a-macbook-pro
-published: false
 ---
 
 I happen to have an old MacBook gathering dust on a shelf. She's pretty cute, a late
@@ -19,9 +18,10 @@ than I expected. So, I gave myself a comparatively simpler task of merely **boot
 NixOS** on the system. Bonus points if I can ssh into it with Tailscale. Double bonus
 points if I can do it with flakes.
 
-This post is meant as a walkthrough of my process. If it helps someone else bumble their
-way through to NixOS as well, that's great. I'll do my best to provide all the steps
-and all the links that I found useful.
+WARNING: A lot of the stuff I do doesn't work. This post is meant as a walkthrough of my
+process. If it helps someone else bumble their way through to NixOS as well, that's great.
+But be aware that you probably shouldn't follow this post step by step. I will do my best
+to mark what things did and did not end up working.
 
 ### First steps: Searching around and giving it a try
 
@@ -41,7 +41,7 @@ So at this point I had a game plan:
 5. Proceed with the installation.
 
 Things started off smooth. I was able to get a basic `flake.nix` going with the
-necessary configuration and started building the ISO:
+necessary configuration and started building the ISO. (This ended up being unnecessary.)
 
 ```nix
 {
@@ -216,10 +216,40 @@ $ wpa_passphrase "funny network name" "password here" |​ sudo wpa_supplicant -
 $ ping olivialta.cc -c 1
 # should get a successful packet here!
 ```
-And we're golden!
-```sh
-$ sudo nixos-install --flake github:rocketrace/naksu-servu#real # or whereever the flake is
-```
+And we're golden! I then tried to `nixos-install`, but... kept getting crypting issues relating to
+flakes not being enabled? (And `--extra-experimental-features` not being accepted?)
+
+### Back to square 1.5-ish
+
+Yeah, so most of what I had done up to this point didn't end up being useful. After hitting the
+issues that seemingly very few people on the internet had had, I took a break and did something
+entirely different. (I played through Fez.) This turned out to be quite helpful, because I thought
+of an alternate way of achieving my goals. I'm sure I would have been able to wrangle the original
+process, but my new way seemed to be much simpler.
+
+The main reason I had tried to use a custom live ISO is because I needed extra wifi drivers.
+According to the `nixos-hardware` repository, [a hardware scan wouldn't automatically detect it][nodet].
+Hence, I would need a custom version of the installer with the modules baked in.
+
+However, this assumption turned out to be false. See, I had previously discarded ethernet connectivity
+due to my Macbook Pro not having a port for that. However, rummaging through my cables-and-adapters
+box I found a thunderbolt->ethernet adapter. I was then able to wire up my laptop to my router with a
+cat6 cable. And the networking works perfectly!
+
+This immensely simplified the rest of the installation process. Frankly everything else was a breeze
+from that point on. I was able to simply stick a graphical NixOS installer onto my USB stick and
+install from there. I selected "replace existing partition" from the GUI, since I had already gotten
+my NixOS root partition (manually) set up previously. I realized that this did not enable swap, so
+I had to later manually add `swapDevices = [{device = "...";}];` to my configuration, pointing to the
+16GB swap partition I set up earlier. I opted to not use a DE, since this laptop had dreams of becoming
+a little server. Afterwards, I wrapped the pregenerated `configuration.nix` into a flake, added
+`nixos-hardware.nixosModules.apple-macbook-pro-11-1` as another module, set up the Tailscale and SSH
+services, set up some git SSH keys, and suddenly everything is working super well!
+
+**I have my current server configuration [on GitHub][minun servu].** It is fairly minimal for now (still
+missing some power management/sleep configuration so I can run her with the lid down), and I
+will certainly refactor it away (perhaps merging some bits with my `nix-darwin` configuration?). But
+it works, and I'm happy with the learning process that came along the way.
 
 
 [live]: https://nixos.org/manual/nixos/stable/#sec-building-image
@@ -232,3 +262,5 @@ $ sudo nixos-install --flake github:rocketrace/naksu-servu#real # or whereever t
 [so]: https://apple.stackexchange.com/a/478778
 [gpt home]: https://www.rodsbooks.com/gdisk/index.html
 [gens]: https://github.com/nix-community/nixos-generators
+[nodet]: https://github.com/NixOS/nixos-hardware/blob/master/apple/macbook-pro/11-1/default.nix#L11-L13
+[minun servu]: https://github.com/rocketrace/naksu-servu
