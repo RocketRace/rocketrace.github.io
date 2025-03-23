@@ -238,13 +238,13 @@ cat6 cable. And the networking works perfectly!
 
 This immensely simplified the rest of the installation process. Frankly everything else was a breeze
 from that point on. I was able to simply stick a graphical NixOS installer onto my USB stick and
-install from there. I selected "replace existing partition" from the GUI, since I had already gotten
-my NixOS root partition (manually) set up previously. I realized that this did not enable swap, so
-I had to later manually add `swapDevices = [{device = "...";}];` to my configuration, pointing to the
-16GB swap partition I set up earlier. I opted to not use a DE, since this laptop had dreams of becoming
-a little server. Afterwards, I wrapped the pregenerated `configuration.nix` into a flake, added
-`nixos-hardware.nixosModules.apple-macbook-pro-11-1` as another module, set up the Tailscale and SSH
-services, set up some git SSH keys, and suddenly everything is working super well!
+install from there. During the graphical installation, I selected "replace existing partition", since
+I had already gotten my NixOS root partition (manually) set up previously. I realized however that this
+did not enable swap, so I had to later manually add `swapDevices = [{device = "...";}];` to my configuration
+(pointing to the 16GB swap partition I set up earlier). I opted to not use a DE, since this laptop had
+dreams of becoming a little server. Afterwards, I wrapped the pregenerated `configuration.nix` into a flake,
+added `nixos-hardware.nixosModules.apple-macbook-pro-11-1` as another module, set up the Tailscale and SSH
+services, initialized some git SSH keys, and at last everything is working super well!
 
 **I have my current server configuration [on GitHub][minun servu].** It is fairly minimal for now (still
 missing some power management/sleep configuration so I can run her with the lid down), and I
