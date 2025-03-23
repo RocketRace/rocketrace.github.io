@@ -12,8 +12,8 @@ So following the footsteps of probably every nerd with an old laptop, I thought
 
 <!--more-->
 
-Now, knowing my track record with hardware and system configuration (and especially disks.
-oh god, disks), I figured this task would be about 50 times harder
+Now, knowing my track record with hardware and system configuration (disks and networking,
+oh god), I figured this task would be about 50 times harder
 than I expected. So, I gave myself a comparatively simpler task of merely **booting into
 NixOS** on the system. Bonus points if I can ssh into it with Tailscale. Double bonus
 points if I can do it with flakes.
