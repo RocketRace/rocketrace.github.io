@@ -6,7 +6,7 @@ slug: nixos-on-a-macbook-pro
 
 I happen to have an old MacBook gathering dust on a shelf. She's pretty cute, a late
 2013 MacBook Pro that I used secondhand for a few years. Now, I've recently gotten
-increasingly aware of the unreliability of cloud-based American platform companies.
+increasingly aware of the unreliability of platform companies.
 So following the footsteps of probably every nerd with an old laptop, I thought
 "Hmm... I could probably turn this into a server and host a bunch of stuff there!"
 
