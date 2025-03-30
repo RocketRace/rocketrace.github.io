@@ -1,6 +1,6 @@
 ---
 permalink: /blog
-layout: paper
+layout: page
 ---
 
 <h2>All blogposts</h2>
