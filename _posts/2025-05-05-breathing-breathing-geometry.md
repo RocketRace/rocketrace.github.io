@@ -30,7 +30,7 @@ the visual spherical geometry!
 
 I wanted to visually convey the [fundamental domain][fundamental domain] of each of the shapes' symmetry groups.
 While the shapes smoothly oscillate between spheres and polyhedra, the fundamental domain (drawn as a set of
-lines on top of the shape) stay constant. This representing the fact that these oscillations do not impact the
+lines on top of the shape) stays constant. This represents the fact that these oscillations do not impact the
 underlying symmetry of the shapes themselves. I found that quite fascinating!
 
 I chose to embed the fundamental domain within the meshes of each of the polyhedra. Given that all of the meshes
