@@ -2,6 +2,7 @@
 layout: post
 title: Breathing new life to Breathing Geometry
 slug: breathing-breathing-geometry
+categories: art projects programming mathematics
 ---
 
 A few months ago, I created *Breathing Geometry*, a geometric breathing exercise centered around
