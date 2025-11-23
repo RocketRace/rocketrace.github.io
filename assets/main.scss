@@ -211,6 +211,13 @@ table, th, td {
   background-color: rgba($color: $gold, $alpha: 0.5);
 }
 
+// webring
+iframe {
+  width: 100%;
+  height: 2.5em;
+  border: 2px dashed rgba($color: $tomato, $alpha: 0.4);
+}
+
 // Code blocks
 // https://github.com/daveyarwood/gruvbox-pygments/tree/master
 .highlighter-rouge {
