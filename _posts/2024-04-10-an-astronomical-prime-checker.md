@@ -2,7 +2,7 @@
 layout: post
 title: An Astronomical Prime Checker
 slug: prime-checker
-categories: programming mathematics
+categories: post
 published: false
 ---
 

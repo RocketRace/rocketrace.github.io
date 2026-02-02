@@ -2,7 +2,7 @@
 layout: post
 title: Museum Card Workings
 slug: museokortti
-categories: small programming
+categories: post
 ---
 
 Recently[^1], the finnish digital museum card application ([Museokortti][museokortti]) has had 

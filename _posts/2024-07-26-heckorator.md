@@ -2,7 +2,7 @@
 layout: post
 title: Heckorator, AKA why you should always check up on old unfinished projects
 slug: heckorator
-categories: small programming esoteric projects
+categories: post
 ---
 
 I recently published [heckorator][gh] on [pypi][pypi]. It's a cursed little project to make Python decorators more readable. But I actually started (and abandoned) the project 4 years ago!

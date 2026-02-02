@@ -2,7 +2,7 @@
 layout: post
 title: The journey to NixOS on a MacBook Pro (11,1 aka late 2013)
 slug: nixos-on-a-macbook-pro
-categories: hardware
+categories: post
 ---
 
 I happen to have an old MacBook gathering dust on a shelf. She's pretty cute, a late
