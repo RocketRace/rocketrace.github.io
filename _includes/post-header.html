@@ -9,7 +9,13 @@
       {{ include.post.date | date: "%b %-d, %Y" }}
     </time>
     {% for category in include.post.categories %}
-      | <span class="category">{{ category }}</span>
+      <span class="category">{{ category }}</span>
     {% endfor %}
+    {% if include.post.links %}
+      see more at:
+      {% for link in include.post.links %}
+        <a href="{{ link[1] }}">{{ link[0] }}</a>
+      {% endfor %}
+    {% endif%}
   </span>
 </div>

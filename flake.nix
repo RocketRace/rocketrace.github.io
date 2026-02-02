@@ -21,7 +21,7 @@
           ruby
           pkgs.typescript
           (pkgs.writeScriptBin "watch" "${pkgs.typescript}/bin/tsc --watch")
-          (pkgs.writeScriptBin "serve" "${gems}/bin/bundle exec jekyll serve")
+          (pkgs.writeScriptBin "serve" "${gems}/bin/bundle exec jekyll serve --drafts")
           (pkgs.writeScriptBin "magic" "${pkgs.bundix}/bin/bundix --magic")
         ];
       };
