@@ -7,6 +7,7 @@ links:
 ---
 
 ![Photograph of the artwork](/assets/images/works/higher-slices/full-piece.jpeg)
+
 *Photo by Matti Ahlgren (Aalto University)*
 
 *Higher Slices* is a piece depicting a tesseract descending into three-dimensional space down from the heavens. Each slice of this higher-dimensional object is cradled by a meshwork of threads, a series of perfect geometric monoliths suspended in air by delicate organic strings.
@@ -21,6 +22,7 @@ TODO complete
 - the materials and process, tea-dyed cotton string and sharp clean birch planks
 
 ![Closeup of threads surrounding the piece, illuminated by light](/assets/images/works/higher-slices/closeup.jpeg)
+
 *Photo by Katarina Culina*
 
 - schematics, pedestal, group members

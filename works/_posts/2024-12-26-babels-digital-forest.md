@@ -7,10 +7,10 @@ links:
     process writeup: https://olivialta.cc/decadv-2024
 ---
 
-![screenshot of the page](/assets/images/works/babels-digital-forest/screenshot.jpeg)
+![screenshot of the page](/assets/images/works/babels-digital-forest/smaller.jpeg)
 
 *Babel's Digital Forest* contains every since 88x31 badge imaginable. Can you scroll all the way to the bottom?
 
 <!--more-->
 
-TODO complete
+TODO complete𝕤
