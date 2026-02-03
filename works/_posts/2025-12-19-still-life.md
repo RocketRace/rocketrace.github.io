@@ -8,7 +8,7 @@ links:
 
 ![a digital painting](/assets/images/works/still-life/cover.png)
 
-*still life* is a real painting on your computer screen. It responds to touch and to movement, to tugs and to gusts of wind. But, physicality comes with permanence -- there is no "undoing" a tear in the fabric.
+*still life* is an interactive painting on your computer screen. It responds to touch and to movement, to tugs and to gusts of wind. But, physicality comes with permanence -- there is no "undoing" a tear in the fabric.
 
 <!--more-->
 
