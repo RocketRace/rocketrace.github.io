@@ -15,6 +15,8 @@ The piece was exhibited in the summer of 2025 as part of the Fibrations (Säikei
 
 <!--more-->
 
+TODO complete
+
 - 4d object movement, slices, the mathematical knowledge. inspiration sources (peapod animation)
 - the materials and process, tea-dyed cotton string and sharp clean birch planks
 
