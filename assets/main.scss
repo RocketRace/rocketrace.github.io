@@ -182,8 +182,8 @@ table {
   border-radius: 2px;
 }
 
-// don't overflow images
-img {
+// don't overflow images or videos
+img, video {
   max-width: 100%;
 }
 
