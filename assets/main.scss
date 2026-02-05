@@ -182,9 +182,17 @@ table {
   border-radius: 2px;
 }
 
-// don't overflow images or videos
+// image and video styling !
 img, video {
-  max-width: 100%;
+  max-width: 90%;
+}
+
+figure {
+  width: 100%;
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 table, th, td {

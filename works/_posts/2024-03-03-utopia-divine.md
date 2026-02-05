@@ -7,7 +7,10 @@ links:
     archive: https://archive.org/details/utopia-divine.zip.asc
 ---
 
-![A lonely file in a folder](/assets/images/works/utopia-divine/lonely.png)
+{% include fig 
+    img="/assets/images/works/utopia-divine/lonely.png"
+    alt="A lonely file in a folder"
+%}
 
 *Utopia Divine* is a programming language of desire, of hope, of beauty.
 

@@ -6,7 +6,10 @@ links:
     itch.io: https://pulustelu.itch.io/still-life
 ---
 
-![a digital painting](/assets/images/works/still-life/cover.png)
+{% include fig
+    img="/assets/images/works/still-life/cover.png"
+    alt="A digital painting"
+%}
 
 *still life* is an interactive painting on your computer screen. It responds to touch and to movement, to tugs and to gusts of wind. But, physicality comes with permanence -- there is no "undoing" a tear in the fabric.
 

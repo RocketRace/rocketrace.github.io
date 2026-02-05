@@ -183,7 +183,10 @@ Changed type of partition to 'Linux swap'
 ```
 I rebooted, and everything​ looked to be well!
 
-![Disk Utility view after partitioning](/assets/images/blog/nixos/mbp-disk-setup.png)
+{% include fig 
+    img="/assets/images/blog/nixos/mbp-disk-setup.png"
+    alt="Disk Utility view after partitioning"
+%}
 
 I booted into the installer and formatted the partitions: (note that `/dev/sda1`
 is the EFI boot, `/dev/sda2` is macOS, `/dev/sda3` is NixOS and `/dev/sda4` is swap)

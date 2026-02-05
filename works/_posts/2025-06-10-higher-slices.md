@@ -6,9 +6,11 @@ links:
     exhibition website (broken url): http://matharts.aalto.fi/exhibition2025/HigherSlices.pdf
 ---
 
-![Photograph of the artwork](/assets/images/works/higher-slices/full-piece.jpeg)
-
-*Photo by Matti Ahlgren (Aalto University)*
+{% include fig 
+    img="/assets/images/works/higher-slices/full-piece.jpeg"
+    alt="Photograph of the artwork"
+    cap="Photo by Matti Ahlgren (Aalto University)"
+%}
 
 *Higher Slices* is a piece depicting a tesseract descending into three-dimensional space down from the heavens. Each slice of this higher-dimensional object is cradled by a meshwork of threads, a series of perfect geometric monoliths suspended in air by delicate organic strings.
 
@@ -21,9 +23,11 @@ TODO complete
 - 4d object movement, slices, the mathematical knowledge. inspiration sources (peapod animation)
 - the materials and process, tea-dyed cotton string and sharp clean birch planks
 
-![Closeup of threads surrounding the piece, illuminated by light](/assets/images/works/higher-slices/closeup.jpeg)
-
-*Photo by Katarina Culina*
+{% include fig 
+    img="/assets/images/works/higher-slices/closeup.jpeg"
+    alt="Closeup of threads surrounding the piece, illuminated by light"
+    cap="Photo by Katarina Culina"
+%}
 
 - schematics, pedestal, group members
 - the effect, the size, the emotion of looking upwards seeing some kind of higher power descend -- or ascend, how all the strings merge at the base into a single point, the contrast between hard and soft, inside and outside, peas in a pod

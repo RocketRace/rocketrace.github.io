@@ -7,9 +7,7 @@ links:
     update blog: https://olivialta.cc/blog/breathing-breathing-geometry
 ---
 
-<video autoplay loop muted disablepictureinpicture disableremoteplayback playsinline>
-    <source src="/assets/images/works/breathing-geometry/loop.webm">
-</video>
+{% include fig video="/assets/images/works/breathing-geometry/loop.webm" width="567px" %}
 
 A breathing exercise with a geometric companion.
 

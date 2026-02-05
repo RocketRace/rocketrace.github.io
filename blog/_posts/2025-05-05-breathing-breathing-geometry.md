@@ -36,7 +36,10 @@ I chose to embed the fundamental domain within the meshes of each of the polyhed
 are programmatically generated, I thought it would be appropriate for this addition to also be algorithmic.
 I then spent some time tinkering with the algorithm on the back of an envelope:
 
-![Fundamental domain notes](/assets/images/blog/breathing-geometry/fd-notes.jpeg)
+{% include fig 
+    img="/assets/images/blog/breathing-geometry/fd-notes.jpeg"
+    alt="Fundamental domain notes"
+%}
 
 I find that code, especially something very algorithmic, is a lot easier for me to design on paper. It's very visual,
 and it lets me sort out my thoughts spatially. That's why I keep a little notebook with me!
@@ -48,8 +51,14 @@ of breathing polyhedra, a heartbeat was a natural addition.
 
 You can see a rough comparison (not accounting for animation) below:
 
-![Original icosahedron](/assets/images/blog/breathing-geometry/icosahedron-original.png)
-![Icosahedron with fundamental domain](/assets/images/blog/breathing-geometry/icosahedron-fd.png)
+{% include fig 
+    img="/assets/images/blog/breathing-geometry/icosahedron-original.png"
+    alt="Original icosahedron"
+%}
+{% include fig 
+    img="/assets/images/blog/breathing-geometry/icosahedron-fd.png"
+    alt="Icosahedron with fundamental domain"
+%}
 
 Now, I wanted to add one more feature before considering the project complete. A little bit of spice to extend the
 basic themes. I therefore chose to add one additional polyhedron to the list of companions. I deemed one to be 
@@ -68,7 +77,10 @@ so well as the last element of a list!
 Since the great dodecahedron uses the same edges as an icosahedron, I was able to reuse some of my previous code
 in this new mesh. I did manually compute the edges in each face, though: 
 
-![Great dodecahedron notes](/assets/images/blog/breathing-geometry/great-dodecahedron-notes.jpeg)
+{% include fig 
+    img="/assets/images/blog/breathing-geometry/great-dodecahedron-notes.jpeg"
+    alt="Great dodecahedron notes"
+%}
 
 Finally I can say that the project is fully featured! I love how the little touches have made the whole thing
 feel a lot more complete. There is of course room to improve on the performance front (such as computing normals
@@ -76,7 +88,10 @@ inside a shader), but I am very happy with the results overall.
 
 [See it for yourself!][breathing-geometry]
 
-![Great dodecahedron](/assets/images/blog/breathing-geometry/great-dodecahedron.png)
+{% include fig 
+    img="/assets/images/blog/breathing-geometry/great-dodecahedron.png"
+    alt="Great dodecahedron"
+%}
 
 [breathing-geometry]: {{ "/breathing-geometry" | relative_url }}
 [spherical geometries]: https://en.wikipedia.org/wiki/List_of_spherical_symmetry_groups
