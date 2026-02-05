@@ -183,9 +183,22 @@ table {
 }
 
 // image and video styling !
-img, video {
+// includes captions also
+img, video, figcaption {
   max-width: 90%;
 }
+
+// experiment with stylistic clipping
+// img, video {
+//   --x: 0.5em;
+//   --y: calc(var(--x) * 3);
+//   clip-path: polygon(
+//     0px var(--y), var(--x) var(--x), var(--y) 0px,
+//     calc(100% - var(--y)) 0px, calc(100% - var(--x)) var(--x), 100% var(--y),
+//     100% calc(100% - var(--y)), calc(100% - var(--x)) calc(100% - var(--x)), calc(100% - var(--y)) 100%,
+//     var(--y) 100%, var(--x) calc(100% - var(--x)), 0px calc(100% - var(--y)),
+//   );
+// }
 
 figure {
   width: 100%;

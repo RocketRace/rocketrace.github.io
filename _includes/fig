@@ -2,7 +2,7 @@
    {% if include.img %}
       <img src="{{ include.img }}"
          {% if include.width %}
-            style="width: {{ include.width }};"
+            width="{{ include.width }}"
          {% endif %}
          {% if include.alt %}
             alt="{{ include.alt }}"
@@ -13,7 +13,7 @@
    {% elsif include.video %}
       <video {{ include.args | default: "autoplay loop muted" }} disablepictureinpicture disableremoteplayback playsinline
          {% if include.width %}
-            style="width: {{ include.width }};"
+            width="{{ include.width }}"
          {% endif %}
       >
          <source src="{{ include.video }}">
