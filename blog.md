@@ -10,6 +10,9 @@ layout: page
     {% include post-header.html depth="h3" post=post %}
     <div class="excerpt-content">
       {{ post.excerpt }}
+      <a href="{{ post.url | relative_url }}">
+        Continue reading
+      </a>
     </div>
   </li>
   {%- else -%}
