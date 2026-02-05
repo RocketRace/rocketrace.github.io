@@ -62,6 +62,10 @@ nav {
 hr {
   border: 2px dashed rgba($color: $tomato, $alpha: 0.4);
 }
+hr.small-divider {
+  border: 1px dashed rgba($color: $tomato, $alpha: 0.4);
+  margin-top: 2em;
+}
 
 // Section titles
 h1, h2, h3 {

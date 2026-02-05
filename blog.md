@@ -14,6 +14,9 @@ layout: page
         Continue reading
       </a>
     </div>
+    {% unless forloop.last %}
+      <hr class="small-divider">
+    {% endunless %}
   </li>
   {%- else -%}
     uh oh, no posts
