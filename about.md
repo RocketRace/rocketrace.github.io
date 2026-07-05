@@ -12,6 +12,14 @@ I'm also broadly enthusiastic about mathematics, software, music, and video game
 The background image to this site is randomly generated! It's based on patterns I
 often scribble down, forming these kinds of knight's-move cuboids on graph paper.
 
+Add me to your badge wall!
+
+<a href="/"><img src="/assets/images/pulustelu.png"></a>
+
+```html
+<a href="https://olivialta.cc"><img src="https://olivialta.cc/assets/images/pulustelu.png"></a>
+```
+
 [December adventure 2024][december adventure]
 
 I am in many places on the internet!
